@@ -12,8 +12,10 @@
         "cf-typegen": "wrangler types"
     },
     "dependencies": {
+        "@marsidev/react-turnstile": "^1.1.0",
         "react": "^19.0.0",
-        "react-dom": "^19.0.0"
+        "react-dom": "^19.0.0",
+        "react-router-dom": "^7.5.2"
     },
     "devDependencies": {
         "@cloudflare/vite-plugin": "^1.0.12",

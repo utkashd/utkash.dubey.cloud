@@ -1,49 +1,134 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import cloudflareLogo from "./assets/Cloudflare_Logo.svg";
-import "./App.css";
+import { Turnstile } from "@marsidev/react-turnstile";
+import { isDevelopment } from "./utils/environment";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+// https://coolors.co/2f2504-594e36-7e846b-a5ae9e-d0ddd7
+export const drabDarkBrown = "#2F2504";
+export const lighterDrabDarkBrown = "#594E36";
+export const resedaGreen = "#7E846B";
+export const ashGray = "#A5AE9E";
+export const platinum = "#D0DDD7";
 
 function App() {
-    const [count, setCount] = useState(0);
+    function StyledLink({
+        to,
+        children,
+    }: {
+        to: string;
+        children: React.ReactNode;
+    }) {
+        return (
+            <div className="text-2xl">
+                <Link to={to} style={{ color: "white" }}>
+                    {children}
+                </Link>
+            </div>
+        );
+    }
 
     return (
-        <>
-            <div>
-                <a href="https://vite.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-                <a href="https://workers.cloudflare.com/" target="_blank">
-                    <img
-                        src={cloudflareLogo}
-                        className="logo cloudflare"
-                        alt="Cloudflare logo"
-                    />
-                </a>
-            </div>
-            <h1>Vite + React + Cloudflare + Utkash</h1>
-            <div className="card">
-                <button
-                    onClick={() => setCount((count) => count + 1)}
-                    aria-label="increment"
+        <Router>
+            <div
+                className="flex min-h-screen"
+                style={{ backgroundColor: drabDarkBrown }}
+            >
+                <nav className="w-64 p-15 flex flex-col fixed left-0 top-0 h-full gap-4 items-start">
+                    <StyledLink to="/">me</StyledLink>
+                    <StyledLink to="/writing">writing</StyledLink>
+                </nav>
+                <div
+                    className="ml-64 flex-grow p-15 text-left text-2xl"
+                    style={{ backgroundColor: lighterDrabDarkBrown }}
                 >
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/writing" element={<Writing />} />
+                        <Route
+                            path="/secret-tunnel"
+                            element={<SECRETTUNNEL />}
+                        />
+                        <Route
+                            path="*"
+                            element={
+                                <h1 className="text-6xl">Page Not Found</h1>
+                            }
+                        />
+                    </Routes>
+                </div>
             </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+        </Router>
+    );
+}
+
+function Page({
+    title,
+    children,
+}: {
+    title: string;
+    children: React.ReactNode;
+}) {
+    return (
+        <>
+            <h1 className="text-6xl">{title}</h1>
+            <div className="pt-10">{children}</div>
         </>
+    );
+}
+
+function Home() {
+    return (
+        <Page title="Utkash Dubey">
+            <p>
+                <ObscurePiiFromBots
+                    nameOfPii="email"
+                    pii="first name last initial at gmail dot com"
+                />
+            </p>
+        </Page>
+    );
+}
+
+function Writing() {
+    return (
+        <Page title="Maybe check back later.">
+            <p>Nothing for now.</p>
+        </Page>
+    );
+}
+
+function SECRETTUNNEL() {
+    return (
+        <Page title="SECRET TUNNEL!!!!">
+            <p>Look what you found!</p>
+        </Page>
+    );
+}
+
+function ObscurePiiFromBots({
+    nameOfPii,
+    pii,
+}: {
+    nameOfPii: string;
+    pii: string;
+}) {
+    return (
+        <a
+            onClick={(event) => {
+                event.preventDefault();
+                const sharePii = `${nameOfPii}: ${pii}`;
+                if (isDevelopment()) {
+                    alert(sharePii);
+                }
+                <Turnstile
+                    siteKey="0x4AAAAAABVLyIoOemftWouV"
+                    onSuccess={() => alert(sharePii)}
+                />;
+            }}
+            href=""
+            style={{ color: ashGray }}
+        >
+            {nameOfPii}
+        </a>
     );
 }
 

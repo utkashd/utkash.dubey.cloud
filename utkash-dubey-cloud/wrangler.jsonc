@@ -5,8 +5,8 @@
 {
     "$schema": "node_modules/wrangler/config-schema.json",
     "name": "utkash-dubey-cloud",
-    "main": "worker/index.ts",
-    "compatibility_date": "2025-04-27",
+    "main": "src/main.tsx",
+    "compatibility_date": "2025-04-24",
     "assets": {
         "not_found_handling": "single-page-application"
     },
@@ -15,7 +15,7 @@
     },
     "routes": [
         {
-            "pattern": "shop.example.com",
+            "pattern": "utkash.dubey.cloud",
             "custom_domain": true
         }
     ]
