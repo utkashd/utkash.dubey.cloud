@@ -1,5 +1,3 @@
-import { Turnstile } from "@marsidev/react-turnstile";
-import { isDevelopment } from "./utils/environment";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 // https://coolors.co/2f2504-594e36-7e846b-a5ae9e-d0ddd7
@@ -116,13 +114,7 @@ function ObscurePiiFromBots({
             onClick={(event) => {
                 event.preventDefault();
                 const sharePii = `${nameOfPii}: ${pii}`;
-                if (isDevelopment()) {
-                    alert(sharePii);
-                }
-                <Turnstile
-                    siteKey="0x4AAAAAABVLyIoOemftWouV"
-                    onSuccess={() => alert(sharePii)}
-                />;
+                alert(sharePii);
             }}
             href=""
             style={{ color: ashGray }}
