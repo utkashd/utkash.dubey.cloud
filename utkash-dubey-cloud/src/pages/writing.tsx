@@ -2,7 +2,10 @@ import { InlineTextFootnoteModal, Page } from "../utils/components";
 
 export function Writing() {
     return (
-        <Page title="from an old weekly writing prompt with friends">
+        <Page
+            title="from a weekly writing prompt with friends"
+            subtitle="written february 2021"
+        >
             <strong>
                 Describe one of your favorite pieces of art or media that your
                 reader probably hasn't experienced. This may be a niche TV show
@@ -28,66 +31,69 @@ export function Writing() {
             <p>Air 💨</p>
             <br />
             <p>
-                In 2021, it is well-established that Avatar: The Last Airbender
-                is nothing short of a masterpiece.
+                In 2021, it is well-established that{" "}
+                <em>Avatar: The Last Airbender</em> is nothing short of a
+                masterpiece.
             </p>
             <br />
             <p>
-                ATLA is set in a pre-industrial world where some people are born
-                with the ability to control one of the four elements: water,
-                earth, fire, or air. The act of controlling an element is called
-                bending, and a person doing the bending is called a bender.
-                Mirroring the four elements, there are four nations, the Earth
-                Kingdom, the Fire Nation, the Water Tribe, and the Air Nomads,
-                and conflict ensues when the Fire Nation attacks and invades the
-                other three nations. The Avatar, the one person able to bend all
-                four elements, and the one whose de facto responsibility is to
-                ensure peace and balance in the world, has been missing,
-                allowing the Fire Nation to continue their conquest and
-                aggression for nearly 100 years. ATLA follows the new Avatar, a
-                12-year-old Air Nomad monk named Aang, in his quest to master
-                all four elements and end the war.
+                <em>ATLA</em> is set in a pre-industrial world where some people
+                are born with the ability to control one of the four elements:
+                water, earth, fire, or air. The act of controlling an element is
+                called bending, and a person doing the bending is called a
+                bender. Mirroring the four elements, there are four nations, the
+                Earth Kingdom, the Fire Nation, the Water Tribe, and the Air
+                Nomads, and conflict ensues when the Fire Nation attacks and
+                invades the other three nations. The Avatar, the one person able
+                to bend all four elements, and the one whose de facto
+                responsibility is to ensure peace and balance in the world, has
+                been missing, allowing the Fire Nation to continue their
+                conquest and aggression for nearly 100 years. <em>ATLA</em>{" "}
+                follows the new Avatar, a 12-year-old Air Nomad monk named Aang,
+                in his quest to master all four elements and end the war.
             </p>
             <br />
             <p>
-                ATLA checks all the boxes of a basic cartoon—its animation
-                style, goofball humor, and adventurous, fantastical plot are
-                designed to appeal to the audience of its network, Nickelodeon.
-                But ATLA accomplishes much more than that. Through high-quality
-                storytelling, ATLA develops its characters and shows us their
-                maturations. Through its animation, soundtrack, and pacing, it
-                instills a love for nature, demonstrates happiness in serenity,
-                and teaches kindness. It thoughtfully explores many mature
-                themes, including sexism, revenge, destiny, genocide, systemic
-                discrimination, spiritualism, loss, honor, abusive
-                relationships, and the tragedies of war—themes that its pre-teen
-                audience are likely underexposed to. The most central theme is
-                arguably the nuances of good and evil and the complexity of
-                villainy, and it delves into this dark subject while balancing
-                the needs of its young and impressionable audience. It does all
-                this without being in-your-face, "here's the lesson" about it,
-                and remembers that at its heart, it's still a children's
-                cartoon.
+                <em>ATLA</em> checks all the boxes of a basic cartoon—its
+                animation style, goofball humor, and adventurous, fantastical
+                plot are designed to appeal to the audience of its network,
+                Nickelodeon. But <em>ATLA</em> accomplishes much more than that.
+                Through high-quality storytelling, <em>ATLA</em> develops its
+                characters and shows us their maturations. Through its
+                animation, soundtrack, and pacing, it instills a love for
+                nature, demonstrates happiness in serenity, and teaches
+                kindness. It thoughtfully explores many mature themes, including
+                sexism, revenge, destiny, genocide, systemic discrimination,
+                spiritualism, loss, honor, abusive relationships, and the
+                tragedies of war—themes that its pre-teen audience are likely
+                underexposed to. The most central theme is arguably the nuances
+                of good and evil and the complexity of villainy, and it delves
+                into this dark subject while balancing the needs of its young
+                and impressionable audience. It does all this without being
+                in-your-face, "here's the lesson" about it, and remembers that
+                at its heart, it's still a children's cartoon.
             </p>
             <br />
             <p>
-                ATLA is beautiful, and that's well-known. So why am I here
-                writing about it?
+                <em>ATLA</em> is beautiful, and that's well-known. So why am I
+                here writing about it?
             </p>
             <br />
             <p>
-                Well, I'm actually not here to tell you about ATLA. I'm actually
-                here to stand up for its unpopular sister, The Legend of Korra.{" "}
+                Well, I'm actually not here to tell you about <em>ATLA</em>. I'm
+                actually here to stand up for its unpopular sister,{" "}
+                <em>The Legend of Korra</em>.{" "}
             </p>
             <br />
             <p>
-                TLoK is a sequel series that follows 17-year-old Korra, the
-                Avatar after Aang, as she completes her bending training and
+                <em>TLoK</em> is a sequel series that follows 17-year-old Korra,
+                the Avatar after Aang, as she completes her bending training and
                 learns to be the guardian of peace and justice{" "}
                 <s>
                     <a
                         href="https://www.youtube.com/watch?v=MJ9Fi4izrYc"
                         target="_blank"
+                        className="text-amber-300 hover:text-amber-600 underline"
                     >
                         in the Old Republic
                     </a>
@@ -97,41 +103,46 @@ export function Writing() {
                 urbanized metropolis that was formed when a Fire Nation colony
                 in the Earth Kingdom transitioned to be independent of the four
                 nations. Unlike Aang, Korra starts out feisty, combative, and
-                eager to fulfill her duties as the Avatar, and yet, unlike ATLA,
-                TLoK doesn't have a single overarching conflict—an outlet for
-                her "Avatar duties"—to connect the entire series.
+                eager to fulfill her duties as the Avatar, and yet, unlike{" "}
+                <em>ATLA</em>, <em>TLoK</em> doesn't have a single overarching
+                conflict—an outlet for her "Avatar duties"—to connect the entire
+                series.
             </p>
             <br />
             <p>
-                TLoK differs from ATLA in many more ways; the industrialization
-                and urbanization of TLoK strips away the love for nature and
-                ideas of spiritualism that ATLA emphasized
+                <em>TLoK</em> differs from <em>ATLA</em> in many more ways; the
+                industrialization and urbanization of <em>TLoK</em> strips away
+                the love for nature and ideas of spiritualism that <em>ATLA</em>{" "}
+                emphasized
                 <InlineTextFootnoteModal
                     jsx={
                         <div>
-                            This isn't purely in vain—in many ways, TLoK
-                            contrasts starkly with ATLA{" "}
+                            This isn't purely in vain—in many ways,{" "}
+                            <em>TLoK</em>
+                            contrasts starkly with <em>ATLA</em>{" "}
                             <strong>by design</strong>. The rapidly-urbanized
-                            world of TLoK is meant to signal Korra's duty; Aang
-                            was a calm spiritual leader when the world needed an
-                            authoritative, powerful bender, Korra was a powerful
-                            bender when the world needed the Avatar's guidance.
+                            world of <em>TLoK</em> is meant to signal Korra's
+                            duty; Aang was a calm spiritual leader when the
+                            world needed an authoritative, powerful bender,
+                            Korra was a powerful bender when the world needed
+                            the Avatar's guidance.
                         </div>
                     }
                 >
                     1
                 </InlineTextFootnoteModal>{" "}
                 . Possibly in an attempt to balance the previous point and add
-                to the lore, TLoK over-explains the mechanics and origins of the
-                Avatar and the Spirit World, which douses the embers of mystery
-                and fantasy that ATLA worked so hard to sow. TLoK also seemingly
-                succumbs to patting itself on the back for how awesome their
-                world is, and how cool fighting while using the elements would
-                be. Bending is no longer a sacred art; it is a collectible that
-                merits a "woahhh, sweet!" The show also essentially poses the
-                rhetorical question, "How sick would it be to be the Avatar?!?"
-                This is clear as glass in this flashback, in which a pre-K Korra
-                is shown proudly displaying her bending prowess, exclaiming,{" "}
+                to the lore, <em>TLoK</em> over-explains the mechanics and
+                origins of the Avatar and the Spirit World, which douses the
+                embers of mystery and fantasy that <em>ATLA</em> worked so hard
+                to sow. <em>TLoK</em> also seemingly succumbs to patting itself
+                on the back for how awesome their world is, and how cool
+                fighting while using the elements would be. Bending is no longer
+                a sacred art; it is a collectible that merits a "woahhh, sweet!"
+                The show also essentially poses the rhetorical question, "How
+                sick would it be to be the Avatar?!?" This is clear as glass in
+                this flashback, in which a pre-K Korra is shown proudly
+                displaying her bending prowess, exclaiming,{" "}
                 <a
                     href="https://www.youtube.com/watch?v=uUjDFm5H27g"
                     target="_blank"
@@ -141,47 +152,67 @@ export function Writing() {
                 </a>
             </p>
             <br />
-            <p>https://www.youtube.com/watch?v=kIXuQdS4mPM (watch till end)</p>
+            <p>
+                <a
+                    href="https://www.youtube.com/watch?v=kIXuQdS4mPM"
+                    target="_blank"
+                    className="text-amber-300 hover:text-amber-600 underline"
+                >
+                    https://www.youtube.com/watch?v=kIXuQdS4mPM
+                </a>{" "}
+                (watch till end)
+            </p>
             <br />
             <p>
                 Before the series had even settled, and in less than two
-                minutes, TLoK tore down the humility and restraint that ATLA
-                championed, and understandably, audiences were not fans of the
-                show. Don't believe me?
+                minutes, <em>TLoK</em> tore down the humility and restraint that{" "}
+                <em>ATLA</em> championed, and understandably, audiences were not
+                fans of the show. Don't believe me?
             </p>
             <br />
-            <p>https://youtu.be/bmKaQqinWKY?t=125 (watch till 2:40)</p>
+            <p>
+                <a
+                    href="https://youtu.be/bmKaQqinWKY?t=125"
+                    target="_blank"
+                    className="text-amber-300 hover:text-amber-600 underline"
+                >
+                    https://youtu.be/bmKaQqinWKY?t=125
+                </a>{" "}
+                (watch till 2:40)
+            </p>
             <br />
-            TLoK is riddled with many more issues. It introduced far too many
-            characters too quickly, which prevented the show from properly
-            establishing and developing any of them. ATLA was blessed with 61
-            episodes and had 12 core characters, while TLoK used its 52 episodes
-            to distribute screen-time and dialogue over 22—nearly twice as many.
-            On top of that, since TLoK didn't have one central conflict; it
-            needed to introduce, develop, and resolve new antagonists in{" "}
+            <em>TLoK</em> is riddled with many more issues. It introduced far
+            too many characters too quickly, which prevented the show from
+            properly establishing and developing any of them. <em>ATLA</em> was
+            blessed with 61 episodes and had 12 core characters, while{" "}
+            <em>TLoK</em> used its 52 episodes to distribute screen-time and
+            dialogue over 22—nearly twice as many. On top of that, since{" "}
+            <em>TLoK</em> didn't have one central conflict; it needed to
+            introduce, develop, and resolve new antagonists in{" "}
             <strong>each</strong> of its four seasons, which came at the expense
             of time for its protagonists. The result is a hodgepodge of rushed
             relationships, a reliance on tropes to substitute for individuality,
             unclear motivations, and generally weak characters.
             <p>
-                However, I argue that much of the blame for TLoK's mediocrity
-                falls on the network, and not the writers. Despite ATLA, one of
-                the most successful and acclaimed shows in Nickelodeon's
-                history, TLoK was originally only granted one season of only 13
-                episodes. Then, after a reasonably successful first season, at
-                least as far as Nickelodeon's standards go, TLoK was bequeathed
-                a season two. By the end of season two, the fandom had
-                more-or-less settled on the show being painfully below-average,
-                so Nickelodeon permitted two more online-only seasons to cash-in
-                and wrap up what the showrunners had started.
+                However, I argue that much of the blame for <em>TLoK</em>'s
+                mediocrity falls on the network, and not the writers. Despite{" "}
+                <em>ATLA</em>, one of the most successful and acclaimed shows in
+                Nickelodeon's history, <em>TLoK</em> was originally only granted
+                one season of only 13 episodes. Then, after a reasonably
+                successful first season, at least as far as Nickelodeon's
+                standards go, <em>TLoK</em> was bequeathed a season two. By the
+                end of season two, the fandom had more-or-less settled on the
+                show being painfully below-average, so Nickelodeon permitted two
+                more online-only seasons to cash-in and wrap up what the
+                showrunners had started.
             </p>
             <br />
             <p>
-                But blaming Nickelodeon doesn't absolve TLoK of its glaring
-                issues. Maybe it explains most of them, sure, but that doesn't
-                suddenly make TLoK good. That would be akin to arguing that the
-                dick sandwich I made last week was good because all I had in my
-                pantry was bread, ketchup, and dick.
+                But blaming Nickelodeon doesn't absolve <em>TLoK</em> of its
+                glaring issues. Maybe it explains most of them, sure, but that
+                doesn't suddenly make <em>TLoK</em> good. That would be akin to
+                arguing that the dick sandwich I made last week was good because
+                all I had in my pantry was bread, ketchup, and dick.
             </p>
             <br />
             <p>
@@ -191,13 +222,13 @@ export function Writing() {
             </p>
             <br />
             <p>
-                The short answer is that I love TLoK because Korra's development
-                in seasons three and four is so genuine and revolutionary that I
-                have to defend it. After the writers' authenticity and
-                capabilities were put into serious question, they came back and
-                showed us true art once more. Let me set the scene...though for
-                brevity and to avoid spoiling too much, you should know that I'm
-                only going to talk about season three.
+                The short answer is that I love <em>TLoK</em> because Korra's
+                development in seasons three and four is so genuine and
+                revolutionary that I have to defend it. After the writers'
+                authenticity and capabilities were put into serious question,
+                they came back and showed us true art once more. Let me set the
+                scene...though for brevity and to avoid spoiling too much, you
+                should know that I'm only going to talk about season three.
             </p>
             <br />
             <p>
@@ -209,8 +240,8 @@ export function Writing() {
                 <InlineTextFootnoteModal
                     jsx={
                         <div>
-                            For those who haven't seen ATLA, this is a joke
-                            about{" "}
+                            For those who haven't seen <em>ATLA</em>, this is a
+                            joke about{" "}
                             <a
                                 href="https://avatar.fandom.com/wiki/Saber-tooth_moose_lion"
                                 target="_blank"
@@ -239,7 +270,7 @@ export function Writing() {
                             >
                                 animals
                             </a>{" "}
-                            of ATLA.
+                            of <em>ATLA</em>.
                         </div>
                     }
                 >
@@ -274,8 +305,9 @@ export function Writing() {
                 system that enables true freedom, and that the existence of the
                 Avatar, a practically all-powerful authority figure who answers
                 to no one, is anything but compatible with that. In other words,
-                Zaheer is similar to the average TLoK critic—he takes issue with
-                pre-K Korra's "I'm the Avatar! You gotta deal with it!"
+                Zaheer is similar to the average <em>TLoK</em> critic—he takes
+                issue with pre-K Korra's "I'm the Avatar! You gotta deal with
+                it!"
             </p>
             <br />
             <p>
@@ -322,7 +354,16 @@ export function Writing() {
                 failure, both in her world and in ours.{" "}
             </p>
             <br />
-            <p>https://www.youtube.com/watch?v=jyfwJ-Q5I4A (watch till end)</p>
+            <p>
+                <a
+                    href="https://www.youtube.com/watch?v=jyfwJ-Q5I4A"
+                    target="_blank"
+                    className="text-amber-300 hover:text-amber-600 underline"
+                >
+                    https://www.youtube.com/watch?v=jyfwJ-Q5I4A
+                </a>{" "}
+                (watch till end)
+            </p>
             <br />
             <p>
                 Korra's story in season three resonates with me in a way that I
@@ -332,9 +373,9 @@ export function Writing() {
                 became clear, and I felt guilt for ever chastising her joy. The
                 beauty of the season extends even beyond Korra's growth. I
                 almost feel as if the writers were trying to tell us that they
-                were head-over-heels excited for TLoK, but comparisons to their
-                perfect previous show turned that excitement into a silent
-                sorrow.
+                were head-over-heels excited for <em>TLoK</em>, but comparisons
+                to their perfect previous show turned that excitement into a
+                silent sorrow.
             </p>
             <br />
             <p>
@@ -343,10 +384,17 @@ export function Writing() {
                 back at seasons one and two with the same overly-critical eye.
                 The writers' ability to express these emotions and evoke so much
                 from me are why I will never tolerate uncontextualized slander
-                for ATLA's beautiful, unloved sister, The Legend of Korra.
+                for <em>ATLA</em>'s beautiful, unloved sister,{" "}
+                <em>The Legend of Korra</em>.
             </p>
             <br />
-            https://www.youtube.com/watch?v=6xW83hx4P7M
+            <a
+                href="https://www.youtube.com/watch?v=6xW83hx4P7M"
+                target="_blank"
+                className="text-amber-300 hover:text-amber-600 underline"
+            >
+                https://www.youtube.com/watch?v=6xW83hx4P7M
+            </a>
         </Page>
     );
 }

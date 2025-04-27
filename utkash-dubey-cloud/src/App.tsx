@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Page } from "./utils/components";
-import { drabDarkBrown, lighterDrabDarkBrown, ashGray } from "./utils/colors";
+import { drabDarkBrown, lighterDrabDarkBrown } from "./utils/colors";
 import { Writing } from "./pages/writing";
 import { CoolStuff } from "./pages/coolstuff";
 
@@ -56,19 +56,8 @@ function App() {
 function Home() {
     return (
         <Page title="Utkash Dubey">
-            <p>
-                <a
-                    onClick={(event) => {
-                        event.preventDefault();
-                        const sharePii = `email: first name last initial at gmail dot com`;
-                        alert(sharePii);
-                    }}
-                    href=""
-                    style={{ color: ashGray }}
-                >
-                    email
-                </a>
-            </p>
+            <p>email: first name last initial at gmail dot com</p>
+            <p>x: long deleted</p>
         </Page>
     );
 }
