@@ -117,9 +117,8 @@ export function Writing() {
                 <InlineTextFootnoteModal
                     jsx={
                         <div>
-                            This isn't purely in vain—in many ways,{" "}
-                            <em>TLoK</em>
-                            contrasts starkly with <em>ATLA</em>{" "}
+                            This isn't purely in vain&mdash;in many ways,{" "}
+                            <em>TLoK</em> contrasts starkly with <em>ATLA</em>{" "}
                             <strong>by design</strong>. The rapidly-urbanized
                             world of <em>TLoK</em> is meant to signal Korra's
                             duty; Aang was a calm spiritual leader when the
