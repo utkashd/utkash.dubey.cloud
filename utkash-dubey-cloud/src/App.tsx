@@ -24,16 +24,16 @@ function App() {
     return (
         <Router>
             <div
-                className="flex min-h-screen"
+                className="flex min-h-screen min-w-screen max-w-screen"
                 style={{ backgroundColor: drabDarkBrown }}
             >
-                <nav className="w-2/12 p-15 flex flex-col h-full gap-4 items-start">
+                <nav className="w-80 max-h-screen min-h-screen p-14 flex flex-col gap-4 items-start">
                     <StyledLink to="/">me</StyledLink>
                     <StyledLink to="/writing">writing</StyledLink>
                     <StyledLink to="/cool-stuff">cool stuff</StyledLink>
                 </nav>
-                <div
-                    className="w-10/12 p-15 text-left text-2xl"
+                <main
+                    className="p-16 w-full flex flex-col text-2xl text-left"
                     style={{ backgroundColor: lighterDrabDarkBrown }}
                 >
                     <Routes>
@@ -47,7 +47,7 @@ function App() {
                             }
                         />
                     </Routes>
-                </div>
+                </main>
             </div>
         </Router>
     );
