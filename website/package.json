@@ -8,7 +8,7 @@
         "build": "tsc -b && vite build",
         "lint": "eslint .",
         "preview": "vite preview",
-        "deploy": "npx wrangler pages deploy dist --project-name utkash-dubey-cloud --branch main"
+        "deploy": "npx wrangler pages deploy dist --branch main"
     },
     "dependencies": {
         "react": "^19.0.0",
