@@ -8,13 +8,15 @@ export function Page({
 }: {
     title: string;
     subtitle?: string;
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }) {
     return (
         <>
             <h1 className="text-6xl max-w-300">{title}</h1>
             {subtitle && <span className="font-light text-sm">{subtitle}</span>}
-            <div className="pt-12 pb-18 max-w-280">{children}</div>
+            {children && (
+                <div className="pt-12 pb-18 max-w-280">{children}</div>
+            )}
         </>
     );
 }

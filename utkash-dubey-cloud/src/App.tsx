@@ -3,17 +3,19 @@ import { Page, StyledLink } from "./utils/components";
 import { drabDarkBrown, lighterDrabDarkBrown } from "./utils/colors";
 import { Writing } from "./pages/writing";
 import { CoolStuff } from "./pages/coolstuff";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 function App() {
     const [isMobileSizeScreen, setIsMobileSizeScreen] = useState(
-        window.innerWidth <= 768
+        window.innerWidth < 1024
     );
     const [isNavOpen, setIsNavOpen] = useState(!isMobileSizeScreen);
 
     const handleWindowSizeChange = () => {
-        setIsMobileSizeScreen(window.innerWidth <= 768);
-        setIsNavOpen(!isMobileSizeScreen);
+        setIsMobileSizeScreen(window.innerWidth < 1024);
+        if (window.innerWidth >= 1024) {
+            setIsNavOpen(false);
+        }
     };
 
     useEffect(() => {
@@ -23,6 +25,27 @@ function App() {
         };
     }, []);
 
+    const navRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (
+                navRef.current &&
+                !navRef.current.contains(event.target as Node)
+            ) {
+                setIsNavOpen(false);
+            }
+        }
+        if (isNavOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isNavOpen]);
+
     return (
         <Router>
             <div
@@ -30,8 +53,11 @@ function App() {
                 style={{ backgroundColor: drabDarkBrown }}
             >
                 <button
-                    className="lg:hidden p-2 absolute top-4 left-4 z-50"
+                    className="fixed p-2 top-4 left-3 z-50"
                     onClick={() => setIsNavOpen(!isNavOpen)}
+                    style={{
+                        visibility: isMobileSizeScreen ? "visible" : "hidden",
+                    }}
                 >
                     <div className="w-8 h-1 bg-white mb-1.5" />
                     <div className="w-8 h-1 bg-white mb-1.5" />
@@ -48,6 +74,7 @@ function App() {
                         z-40
                         lg:static lg:translate-x-0 lg:max-h-screen lg:min-h-screen
                     `}
+                    ref={navRef}
                     style={{ backgroundColor: drabDarkBrown }}
                 >
                     <StyledLink
