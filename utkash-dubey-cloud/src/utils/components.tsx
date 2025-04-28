@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Page({
     title,
@@ -15,6 +16,24 @@ export function Page({
             {subtitle && <span className="font-light text-sm">{subtitle}</span>}
             <div className="pt-12 pb-18 max-w-280">{children}</div>
         </>
+    );
+}
+
+export function StyledLink({
+    to,
+    children,
+    onClick,
+}: {
+    to: string;
+    children: React.ReactNode;
+    onClick?: () => void;
+}) {
+    return (
+        <div className="text-2xl">
+            <Link to={to} style={{ color: "white" }} onClick={onClick}>
+                {children}
+            </Link>
+        </div>
     );
 }
 
