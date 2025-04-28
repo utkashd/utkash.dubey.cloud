@@ -1,9 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Page, StyledLink } from "./utils/components";
-import { drabDarkBrown, lighterDrabDarkBrown } from "./utils/colors";
+import {
+    drabDarkBrown,
+    lighterDrabDarkBrown,
+    platinum,
+    resedaGreen,
+} from "./utils/colors";
 import { Writing } from "./pages/writing";
 import { CoolStuff } from "./pages/coolstuff";
 import { useEffect, useRef, useState } from "react";
+import { Food } from "./pages/food";
 
 function App() {
     const [isMobileSizeScreen, setIsMobileSizeScreen] = useState(
@@ -26,12 +32,15 @@ function App() {
     }, []);
 
     const navRef = useRef<HTMLDivElement>(null);
+    const navHamburger = useRef<HTMLButtonElement>(null);
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
             if (
                 navRef.current &&
-                !navRef.current.contains(event.target as Node)
+                !navRef.current.contains(event.target as Node) &&
+                navHamburger.current &&
+                !navHamburger.current.contains(event.target as Node)
             ) {
                 setIsNavOpen(false);
             }
@@ -58,10 +67,46 @@ function App() {
                     style={{
                         visibility: isMobileSizeScreen ? "visible" : "hidden",
                     }}
+                    ref={navHamburger}
                 >
-                    <div className="w-8 h-1 bg-white mb-1.5" />
-                    <div className="w-8 h-1 bg-white mb-1.5" />
-                    <div className="w-8 h-1 bg-white" />
+                    {isNavOpen && (
+                        <>
+                            <div
+                                className="w-8 h-1 mb-1.5"
+                                style={{ backgroundColor: resedaGreen }}
+                            />
+                            <div
+                                className="w-8 h-1 mb-1.5"
+                                style={{ backgroundColor: resedaGreen }}
+                            />
+                            <div
+                                className="w-8 h-1"
+                                style={{ backgroundColor: resedaGreen }}
+                            />
+                        </>
+                    )}
+                    {!isNavOpen && (
+                        <>
+                            <div
+                                className="w-8 h-1 mb-1.5"
+                                style={{
+                                    backgroundColor: platinum,
+                                }}
+                            />
+                            <div
+                                className="w-8 h-1 mb-1.5"
+                                style={{
+                                    backgroundColor: platinum,
+                                }}
+                            />
+                            <div
+                                className="w-8 h-1"
+                                style={{
+                                    backgroundColor: platinum,
+                                }}
+                            />
+                        </>
+                    )}
                 </button>
 
                 <nav
@@ -95,6 +140,12 @@ function App() {
                     >
                         cool stuff
                     </StyledLink>
+                    <StyledLink
+                        to="/food"
+                        onClick={() => setIsNavOpen(!isMobileSizeScreen)}
+                    >
+                        food
+                    </StyledLink>
                 </nav>
                 <main
                     className="p-16 w-full flex flex-col text-2xl text-left"
@@ -104,6 +155,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/writing" element={<Writing />} />
                         <Route path="/cool-stuff" element={<CoolStuff />} />
+                        <Route path="/food" element={<Food />} />
                         <Route
                             path="*"
                             element={
@@ -126,6 +178,19 @@ function Home() {
                 <strong>location</strong>
             </p>
             <p>california bay area</p>
+            <br />
+            <p>
+                <strong>github</strong>
+            </p>
+            <p>
+                <a
+                    href="https://github.com/utkashd"
+                    target="_blank"
+                    className="text-amber-300 hover:text-amber-600 underline"
+                >
+                    https://github.com/utkashd
+                </a>
+            </p>
             <br />
             <p>
                 <strong>contact</strong>
