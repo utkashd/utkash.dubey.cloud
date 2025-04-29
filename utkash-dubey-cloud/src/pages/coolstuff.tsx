@@ -323,6 +323,7 @@ export function CoolStuff() {
                     <li>Kevin Durant (Oracle)</li>
                     <li>Klay Thompson (Oracle, Chase)</li>
                     <li>Draymond Green (Oracle, Chase)</li>
+                    <li>Andrew Wiggins (Chase)</li>
                     <li>Kyle Lowry (Oracle)</li>
                     <li>DeMar DeRozan (Oracle)</li>
                     <li>Tyrese Haliburton (Chase)</li>
