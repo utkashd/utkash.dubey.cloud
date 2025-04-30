@@ -319,7 +319,10 @@ export function CoolStuff() {
                     <li>Lleyton Hewitt (SAP Open)</li>
                     <li>Mardy Fish (SAP Open)</li>
                     <li>Yannick Hanfmann (USC)</li>
-                    <li>Jeremy Lin (Piazza's in Palo Alto)</li>
+                    <li>
+                        Jeremy Lin (Piazza's in Palo Alto, didn't see him play)
+                    </li>
+                    <li>Wayne Gretzky (USC 2017, didn't see him play)</li>
                     <li>Steph Curry (Oracle, Chase)</li>
                     <li>Kevin Durant (Oracle)</li>
                     <li>Klay Thompson (Oracle, Chase)</li>
