@@ -25,6 +25,15 @@ export function Food() {
                     </li>
                     <li>
                         <a
+                            href="https://taqueriaelgrullense.shop/"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Taqueria El Grullense
+                        </a>
+                    </li>
+                    <li>
+                        <a
                             href="https://www.dindingdumplinghouses.com/"
                             target="_blank"
                             className="text-amber-300 hover:text-amber-600 underline"
@@ -52,6 +61,7 @@ export function Food() {
                     <li>Chez Panisse</li>
                     <li>The French Laundry</li>
                     <li>Protégé</li>
+                    <li>Gregory's Gourmet Desserts</li>
                 </ul>
             </Page>
             <Page title="...needs improvement">
