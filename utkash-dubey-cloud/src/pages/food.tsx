@@ -61,6 +61,15 @@ function GoodBayAreaFood() {
                     </a>
                 </li>
                 <li>Taco Bell</li>
+                <li>
+                    <a
+                        href="https://www.mikonosgrills.com/"
+                        target="_blank"
+                        className="text-amber-300 hover:text-amber-600 underline"
+                    >
+                        Mikonos Grill
+                    </a>
+                </li>
             </ul>
         </Page>
     );
