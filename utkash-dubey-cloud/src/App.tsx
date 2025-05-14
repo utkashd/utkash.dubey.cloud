@@ -10,6 +10,7 @@ import { Writing } from "./pages/writing";
 import { CoolStuff } from "./pages/coolstuff";
 import { useEffect, useRef, useState } from "react";
 import { Food } from "./pages/food";
+import { Bracket } from "./pages/bracket";
 
 function App() {
     const [isMobileSizeScreen, setIsMobileSizeScreen] = useState(
@@ -156,6 +157,7 @@ function App() {
                         <Route path="/writing" element={<Writing />} />
                         <Route path="/cool-stuff" element={<CoolStuff />} />
                         <Route path="/food" element={<Food />} />
+                        <Route path="/bracket" element={<Bracket />}></Route>
                         <Route
                             path="*"
                             element={
