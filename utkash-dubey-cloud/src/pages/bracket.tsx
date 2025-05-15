@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Page } from "../utils/components";
 // import rollADie from "roll-a-die";
 
@@ -8,7 +8,6 @@ export function BracketModal({
 }: {
     title?: string;
     jsx: React.ReactNode;
-    children: string;
 }) {
     return (
         <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300 ease-out">
@@ -29,8 +28,6 @@ lego party
 puzzle from target`;
 
     const [activities, setActivities] = useState<string>("");
-
-    const dieRollRef = useRef<HTMLDivElement>(null);
 
     const tournamentTime = () => {
         if (activities === "") {
@@ -126,7 +123,6 @@ puzzle from target`;
             >
                 Go!
             </button>
-            <div ref={dieRollRef}></div>
         </Page>
     );
 }
