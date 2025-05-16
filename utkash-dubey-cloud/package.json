@@ -16,7 +16,6 @@
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "react-router-dom": "^7.5.2",
-        "roll-a-die": "^2.0.1",
         "tailwindcss": "^4.1.4"
     },
     "devDependencies": {
