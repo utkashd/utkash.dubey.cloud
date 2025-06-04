@@ -1,10 +1,47 @@
-import { InlineTextFootnoteModal, Page } from "../utils/components";
+import { InlineTextFootnoteModal } from "../utils/components";
 
 export function Writing() {
     return (
-        <Page
+        <>
+            <KorraEssay />
+        </>
+    );
+}
+
+function BlogPost({
+    title,
+    children,
+    versionHistory,
+}: {
+    title: string;
+    children?: React.ReactNode;
+    versionHistory: { dateWritten: string; dateLastEdited?: string };
+}) {
+    return (
+        <>
+            <h1 className="text-6xl max-w-300">{title}</h1>
+            <span className="font-light text-sm">
+                {`written ${versionHistory.dateWritten}`}
+            </span>
+            <br />
+            {versionHistory.dateLastEdited && (
+                <>
+                    <span className="font-light text-sm">
+                        {`last modified ${versionHistory.dateLastEdited}`}
+                    </span>
+                    <br />
+                </>
+            )}
+            {children}
+        </>
+    );
+}
+
+function KorraEssay() {
+    return (
+        <BlogPost
             title="from a weekly writing prompt with friends"
-            subtitle="written february 2021"
+            versionHistory={{ dateWritten: "feb 2021" }}
         >
             <strong>
                 Describe one of your favorite pieces of art or media that your
@@ -394,6 +431,6 @@ export function Writing() {
             >
                 https://www.youtube.com/watch?v=6xW83hx4P7M
             </a>
-        </Page>
+        </BlogPost>
     );
 }
