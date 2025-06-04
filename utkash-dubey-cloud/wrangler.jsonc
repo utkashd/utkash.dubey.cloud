@@ -18,12 +18,6 @@
             "pattern": "utkash.dubey.cloud",
             "custom_domain": true
         }
-    ],
-    "r2_buckets": [
-        {
-            "binding": "MEDIA",
-            "bucket_name": "utkash-dubey-cloud"
-        }
     ]
     /**
      * Smart Placement
