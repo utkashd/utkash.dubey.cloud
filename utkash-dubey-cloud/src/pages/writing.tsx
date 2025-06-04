@@ -19,20 +19,18 @@ function BlogPost({
 }) {
     return (
         <>
-            <h1 className="text-6xl max-w-300">{title}</h1>
+            <h1 className="text-5xl max-w-300">{title}</h1>
             <span className="font-light text-sm">
                 {`written ${versionHistory.dateWritten}`}
             </span>
-            <br />
             {versionHistory.dateLastEdited && (
                 <>
                     <span className="font-light text-sm">
                         {`last modified ${versionHistory.dateLastEdited}`}
                     </span>
-                    <br />
                 </>
             )}
-            {children}
+            <div className="pt-12 pb-18 max-w-280">{children}</div>
         </>
     );
 }
