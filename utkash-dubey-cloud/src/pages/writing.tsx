@@ -3,6 +3,7 @@ import { InlineTextFootnoteModal } from "../utils/components";
 export function Writing() {
     return (
         <>
+            <SolarBatteries />
             <KorraEssay />
         </>
     );
@@ -32,6 +33,18 @@ function BlogPost({
             )}
             <div className="pt-12 pb-18 max-w-280">{children}</div>
         </>
+    );
+}
+
+function SolarBatteries() {
+    // in progress
+    return (
+        <BlogPost
+            title="evaluating batteries for our solar system"
+            versionHistory={{ dateWritten: "jun 2025" }}
+        >
+            <img src="/media/images/toodamnhigh.jpg" />
+        </BlogPost>
     );
 }
 
