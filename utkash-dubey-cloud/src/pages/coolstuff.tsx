@@ -353,6 +353,271 @@ export function CoolStuff() {
                     <li>Miles Bridges (Staples)</li>
                 </ul>
             </Page>
+            <Page title="underrated youtube channels">
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@w2kitchen"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            W2 Kitchen
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@hueezer"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Huy Nguyen
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@ChrisYoungCooks"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Chris Young
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@MagicIngredients"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            小高姐的 Magic Ingredients
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@theartofplating"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            The Art of Plating
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@daywithmei"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            daywithmei
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@lapatededom"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            La Pâte de Dom
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@ParkerHallberg"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Parker Hallberg
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@WayofRamen"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Way of Ramen
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@PastryLivingwithAya"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Pastry Living with Aya
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@sheldoskitchen"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            sheldo's kitchen
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@saintcavish"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            saintcavish
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@PolylogCS"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Polylog
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@tom-delalande"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Tom Delalande
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@brycedotco"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Bryce Bostwick
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@AntonPutra"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Anton Putra
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@backpine"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            backpine labs
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@kevinfaang"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Kevin Fang
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@BridgeStuart"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Bridge Stuart
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@AccentedCinema"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Accented Cinema
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@TheHouseofTabula"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            The House of Tabula (FKA The Cinema Cartography)
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@FramesOfEmpathy"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Frames of Empathy
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@kaptainkristian"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            kaptainkristian
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@LikeStoriesofOld"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Like Stories of Old
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@youthnation1"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Logos Made Flesh
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@NineNerdYards"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            NineNerdYards
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@SolePorpoise"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            SolePorpoise
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@trago6140"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Trago
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@WitandFolly"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            wit and folly
+                        </a>
+                    </li>
+                </ul>
+            </Page>
         </>
     );
 }
