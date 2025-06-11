@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    useLocation,
+} from "react-router-dom";
 import { Page, StyledLink } from "./utils/components";
 import {
     drabDarkBrown,
@@ -11,6 +16,16 @@ import { CoolStuff } from "./pages/coolstuff";
 import { useEffect, useRef, useState } from "react";
 import { Food } from "./pages/food";
 import { Bracket } from "./pages/bracket";
+
+export function ScrollToTop() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
+    return null;
+}
 
 function App() {
     const [isMobileSizeScreen, setIsMobileSizeScreen] = useState(
@@ -58,6 +73,7 @@ function App() {
 
     return (
         <Router>
+            <ScrollToTop />
             <div
                 className="flex min-h-screen min-w-screen max-w-screen relative"
                 style={{ backgroundColor: drabDarkBrown }}

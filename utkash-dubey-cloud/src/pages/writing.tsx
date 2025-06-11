@@ -3,6 +3,9 @@ import { InlineTextFootnoteModal } from "../utils/components";
 export function Writing() {
     return (
         <>
+            <SolarBatteries />
+            <hr />
+            <br />
             <KorraEssay />
         </>
     );
@@ -34,13 +37,51 @@ function BlogPost({
         </>
     );
 }
-export function SolarBatteries() {
-    // in progress
+function SolarBatteries() {
     return (
         <BlogPost
-            title="evaluating batteries for our solar system"
+            title="evaluating batteries for our solar system 🌞"
             versionHistory={{ dateWritten: "jun 2025" }}
-        ></BlogPost>
+        >
+            <p>
+                <strong>Jun 2 2025:</strong> I've started looking into solar
+                batteries, and I'll be (sporadically) using this as a journal of
+                sorts.
+            </p>
+            <br />
+            <p>
+                For today I'll just put down the factors that, as far as I know
+                now, may be relevant. And I'll gather the details and learn more
+                at a different time:
+            </p>
+            <ul className="pl-5 list-disc list-inside">
+                <li>current (ha) solar generation</li>
+                <li>kwh of electricity we use from the grid</li>
+                <li>potential (ha) solar generation w/ new panels</li>
+                <li>
+                    PGE bill factors: we're on E-ELEC because AFAIK PGE makes us
+                </li>
+                <li>
+                    PGE solar compensation: we're on NEM2, presumably changing
+                    our solar system 🌌 would shift us to NEM3. And I read
+                    somewhere that we'll all be switched to NEM3 soon?
+                </li>
+                <li>What is "true-up?"</li>
+                <li>
+                    how often + how costly are PGE outages in my area?
+                    (anecdotally, they're too frequent in the summer)
+                </li>
+                <li>
+                    regulations, incentives, and political landscape of solar
+                    batteries
+                </li>
+                <li>solar battery expected lifetime + warranty terms</li>
+                <li>
+                    presumably this isn't *really* a factor, but I'll look into
+                    it just in case: battery safety
+                </li>
+            </ul>
+        </BlogPost>
     );
 }
 
