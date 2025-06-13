@@ -287,15 +287,6 @@ export function CoolStuff() {
                             Interstellar
                         </a>
                     </li>
-                    <li>
-                        <a
-                            href="https://www.albumoftheyear.org/album/5768-2pac-me-against-the-world.php"
-                            target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
-                        >
-                            Me Against the World
-                        </a>
-                    </li>
                 </ul>
             </Page>
             <Page title="good shows i've seen">
