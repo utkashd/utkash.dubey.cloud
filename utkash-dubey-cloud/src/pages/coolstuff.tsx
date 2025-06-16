@@ -411,6 +411,15 @@ export function CoolStuff() {
                     </li>
                     <li>
                         <a
+                            href="https://www.youtube.com/@JulesCookingGlobal"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Jules Cooking
+                        </a>
+                    </li>
+                    <li>
+                        <a
                             href="https://www.youtube.com/@ParkerHallberg"
                             target="_blank"
                             className="text-amber-300 hover:text-amber-600 underline"
