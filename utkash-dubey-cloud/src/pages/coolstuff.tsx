@@ -136,6 +136,15 @@ export function CoolStuff() {
                     </li>
                     <li>
                         <a
+                            href="https://www.albumoftheyear.org/album/32261-earl-sweatshirt-solace.php"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            solace
+                        </a>
+                    </li>
+                    <li>
+                        <a
                             href="https://www.albumoftheyear.org/album/79796-vince-staples-big-fish-theory.php"
                             target="_blank"
                             className="text-amber-300 hover:text-amber-600 underline"
