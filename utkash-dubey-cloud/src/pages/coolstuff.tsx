@@ -55,6 +55,15 @@ export function CoolStuff() {
                     </li>
                     <li>
                         <a
+                            href="https://www.albumoftheyear.org/album/484-kanye-west-late-registration.php"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Late Registration
+                        </a>
+                    </li>
+                    <li>
+                        <a
                             href="https://www.albumoftheyear.org/album/435-kanye-west-graduation.php"
                             target="_blank"
                             className="text-amber-300 hover:text-amber-600 underline"
@@ -123,6 +132,24 @@ export function CoolStuff() {
                             className="text-amber-300 hover:text-amber-600 underline"
                         >
                             Black Panther: The Album
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.albumoftheyear.org/album/444-clipse-hell-hath-no-fury.php"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            Hell Hath No Fury
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.albumoftheyear.org/album/461680-pusha-t-its-almost-dry.php"
+                            target="_blank"
+                            className="text-amber-300 hover:text-amber-600 underline"
+                        >
+                            It's Almost Dry
                         </a>
                     </li>
                     <li>
