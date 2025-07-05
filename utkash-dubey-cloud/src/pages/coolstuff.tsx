@@ -65,16 +65,6 @@ function FavoriteAlbums() {
             },
             {
                 aotyLink:
-                    "https://www.albumoftheyear.org/album/795320-andre-3000-new-blue-sun.php",
-                albumName: "New Blue Sun",
-            },
-            {
-                aotyLink:
-                    "https://www.albumoftheyear.org/album/5593-marvin-gaye-whats-going-on.php",
-                albumName: "What's Going On",
-            },
-            {
-                aotyLink:
                     "https://www.albumoftheyear.org/album/99139-various-artists-black-panther-the-album.php",
                 albumName: "Black Panther: The Album",
             },
@@ -140,6 +130,16 @@ function FavoriteAlbums() {
             },
         ],
         [AlbumCategory.NotHipHop]: [
+            {
+                aotyLink:
+                    "https://www.albumoftheyear.org/album/795320-andre-3000-new-blue-sun.php",
+                albumName: "New Blue Sun",
+            },
+            {
+                aotyLink:
+                    "https://www.albumoftheyear.org/album/5593-marvin-gaye-whats-going-on.php",
+                albumName: "What's Going On",
+            },
             {
                 aotyLink:
                     "https://www.albumoftheyear.org/album/2131-trent-reznor-atticus-ross-the-social-network.php",
