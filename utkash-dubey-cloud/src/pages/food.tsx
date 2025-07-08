@@ -13,7 +13,7 @@ export function Food() {
 
 function GoodBayAreaFood() {
     return (
-        <Page title="good bay area food">
+        <Page title="good bay area food" shortUniqueNameForId="good-food">
             <ul>
                 <li>
                     <a
@@ -77,7 +77,7 @@ function GoodBayAreaFood() {
 
 function HopingToTry() {
     return (
-        <Page title="hoping to try">
+        <Page title="hoping to try" shortUniqueNameForId="hope-to-try">
             <ul>
                 <li>Nari</li>
                 <li>Kusakabe</li>
@@ -94,7 +94,7 @@ function HopingToTry() {
 
 function NeedsImprovement() {
     return (
-        <Page title="...needs improvement">
+        <Page title="...needs improvement" shortUniqueNameForId="yikes">
             <ul>
                 <li>
                     <a
@@ -123,7 +123,10 @@ function NeedsImprovement() {
 
 function CookingIdeas() {
     return (
-        <Page title="cooking ideas to test">
+        <Page
+            title="cooking ideas to test"
+            shortUniqueNameForId="cooking-ideas"
+        >
             <ul>
                 <li>pain au chocolat + hazelnut praliné hot chocolate</li>
                 <li>

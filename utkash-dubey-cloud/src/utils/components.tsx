@@ -3,16 +3,41 @@ import { Link } from "react-router-dom";
 
 export function Page({
     title,
+    shortUniqueNameForId,
     subtitle,
     children,
 }: {
     title: string;
+    shortUniqueNameForId?: string;
     subtitle?: string;
     children?: React.ReactNode;
 }) {
+    useEffect(() => {
+        // When component mounts, scroll to the hash if it exists
+        const hash = window.location.hash;
+        if (hash) {
+            const element = document.getElementById(hash.substring(1));
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, []);
+
     return (
         <>
-            <h1 className="text-6xl max-w-300">{title}</h1>
+            {shortUniqueNameForId ? (
+                <h1 className="text-6xl max-w-300" id={shortUniqueNameForId}>
+                    <a
+                        href={`#${shortUniqueNameForId}`}
+                        className="hover:text-amber-600"
+                    >
+                        {title}
+                    </a>
+                </h1>
+            ) : (
+                <h1 className="text-6xl max-w-300">{title}</h1>
+            )}
+
             {subtitle && <span className="font-light text-sm">{subtitle}</span>}
             {children && (
                 <div className="pt-12 pb-18 max-w-280">{children}</div>

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { InlineTextFootnoteModal } from "../utils/components";
 
 export function Writing() {
@@ -14,22 +15,41 @@ export function Writing() {
 function BlogPost({
     title,
     children,
-    versionHistory,
+    versionHistory: versionHistoryInfo,
+    shortUniqueNameForId,
 }: {
     title: string;
     children?: React.ReactNode;
     versionHistory: { dateWritten: string; dateLastEdited?: string };
+    shortUniqueNameForId: string;
 }) {
+    useEffect(() => {
+        // When component mounts, scroll to the hash if it exists
+        const hash = window.location.hash;
+        if (hash) {
+            const element = document.getElementById(hash.substring(1));
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    }, []);
     return (
         <>
-            <h1 className="text-5xl max-w-300">{title}</h1>
+            <h1 className="text-5xl max-w-300" id={shortUniqueNameForId}>
+                <a
+                    href={`#${shortUniqueNameForId}`}
+                    className="hover:text-amber-600"
+                >
+                    {title}
+                </a>
+            </h1>
             <span className="font-light text-sm">
-                {`written ${versionHistory.dateWritten}`}
+                {`written ${versionHistoryInfo.dateWritten}`}
             </span>
-            {versionHistory.dateLastEdited && (
+            {versionHistoryInfo.dateLastEdited && (
                 <>
                     <span className="font-light text-sm">
-                        {`last modified ${versionHistory.dateLastEdited}`}
+                        {`last modified ${versionHistoryInfo.dateLastEdited}`}
                     </span>
                 </>
             )}
@@ -42,6 +62,7 @@ function SolarBatteries() {
         <BlogPost
             title="evaluating batteries for our solar system 🌞"
             versionHistory={{ dateWritten: "jun 2025" }}
+            shortUniqueNameForId={"solar"}
         >
             <p>
                 <strong>Jun 2 2025:</strong> I've started looking into solar
@@ -90,6 +111,7 @@ function KorraEssay() {
         <BlogPost
             title="from a weekly writing prompt with friends"
             versionHistory={{ dateWritten: "feb 2021" }}
+            shortUniqueNameForId={"korra"}
         >
             <strong>
                 Describe one of your favorite pieces of art or media that your

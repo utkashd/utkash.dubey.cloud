@@ -193,6 +193,7 @@ function FavoriteAlbums() {
         <Page
             title="some of my favorite albums"
             subtitle="when i write it out like this, my taste does seem a bit basic"
+            shortUniqueNameForId={"albums"}
         >
             <ul>
                 {Object.entries(albumsByCategory).map(
@@ -228,7 +229,7 @@ export function CoolStuff() {
     return (
         <>
             <FavoriteAlbums />
-            <Page title="good shows i've seen">
+            <Page title="good shows i've seen" shortUniqueNameForId={"shows"}>
                 <ul>
                     <li>Andor</li>
                     <li>Avatar: The Last Airbender</li>
@@ -242,7 +243,10 @@ export function CoolStuff() {
                     <li>Peep Show</li>
                 </ul>
             </Page>
-            <Page title="notable athletes i've seen play in-person">
+            <Page
+                title="notable athletes i've seen play in-person"
+                shortUniqueNameForId={"athletes"}
+            >
                 <ul>
                     <li>Rafael Nadal (Indian Wells)</li>
                     <li>
@@ -283,7 +287,10 @@ export function CoolStuff() {
                     <li>Miles Bridges (Staples)</li>
                 </ul>
             </Page>
-            <Page title="underrated youtube channels">
+            <Page
+                title="underrated youtube channels"
+                shortUniqueNameForId={"yt"}
+            >
                 <ul>
                     <li>
                         <a
