@@ -2,12 +2,21 @@ import { useEffect } from "react";
 import { InlineTextFootnoteModal } from "../utils/components";
 
 export function Writing() {
+    const BLOG_POST_COMPONENT_FUNCTIONS: (() => React.ReactElement)[] = [
+        SolarBatteries,
+        KorraEssay,
+    ];
     return (
         <>
-            <SolarBatteries />
-            <hr />
-            <br />
-            <KorraEssay />
+            {BLOG_POST_COMPONENT_FUNCTIONS.map((fxn, index) => {
+                return (
+                    <div key={index}>
+                        {fxn()}
+                        <hr />
+                        <br />
+                    </div>
+                );
+            })}
         </>
     );
 }
@@ -25,6 +34,7 @@ function BlogPost({
 }) {
     useEffect(() => {
         // When component mounts, scroll to the hash if it exists
+        // Yes, ChatGPT did write this. Why do you ask?
         const hash = window.location.hash;
         if (hash) {
             const element = document.getElementById(hash.substring(1));
@@ -57,6 +67,7 @@ function BlogPost({
         </>
     );
 }
+
 function SolarBatteries() {
     return (
         <BlogPost
