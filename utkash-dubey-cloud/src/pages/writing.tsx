@@ -59,7 +59,7 @@ function BlogPost({
             {versionHistoryInfo.dateLastEdited && (
                 <>
                     <span className="font-light text-sm">
-                        {`last modified ${versionHistoryInfo.dateLastEdited}`}
+                        {`, last modified ${versionHistoryInfo.dateLastEdited}`}
                     </span>
                 </>
             )}
@@ -72,7 +72,10 @@ function SolarBatteries() {
     return (
         <BlogPost
             title="evaluating batteries for our solar system 🌞"
-            versionHistory={{ dateWritten: "jun 2025" }}
+            versionHistory={{
+                dateWritten: "jun 2025",
+                dateLastEdited: "jul 2025",
+            }}
             shortUniqueNameForId={"solar"}
         >
             <p>
