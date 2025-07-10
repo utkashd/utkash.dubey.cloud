@@ -76,6 +76,17 @@ function SolarBatteries() {
             shortUniqueNameForId={"solar"}
         >
             <p>
+                <strong>Jul 9 2025:</strong> Okay, seems I've busy with{" "}
+                <a
+                    href="https://en.wikipedia.org/wiki/Cassian_Andor"
+                    target="_blank"
+                >
+                    and/or
+                </a>{" "}
+                distracted by other interests. I'll revisit this soon!
+            </p>
+            <br />
+            <p>
                 <strong>Jun 2 2025:</strong> I've started looking into solar
                 batteries, and I'll be (sporadically) using this as a journal of
                 sorts.
