@@ -70,6 +70,11 @@ function FavoriteAlbums() {
             },
             {
                 aotyLink:
+                    "https://www.albumoftheyear.org/album/991217-clipse-let-god-sort-em-out.php",
+                albumName: "Let God Sort Em Out",
+            },
+            {
+                aotyLink:
                     "https://www.albumoftheyear.org/album/444-clipse-hell-hath-no-fury.php",
                 albumName: "Hell Hath No Fury",
             },
