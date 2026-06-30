@@ -258,7 +258,10 @@ export function CoolStuff() {
                         Andy Roddick (SAP Open, a charity exhibition I can't
                         remember)
                     </li>
-                    <li>Roger Federer (Indian Wells, Match for Africa)</li>
+                    <li>
+                        Roger Federer (Indian Wells, Match for Africa, Chase
+                        Center)
+                    </li>
                     <li>Novak Djokovic (Indian Wells)</li>
                     <li>Stan Wawrinka (Indian Wells)</li>
                     <li>Dominic Thiem (Indian Wells)</li>
@@ -290,6 +293,13 @@ export function CoolStuff() {
                     <li>Luka Doncic (Staples)</li>
                     <li>LaMelo Ball (Staples)</li>
                     <li>Miles Bridges (Staples)</li>
+                    <li>Carlos Alcaraz (Chase Center)</li>
+                    <li>Casper Ruud (Chase Center)</li>
+                    <li>Jakub Menšik (Chase Center)</li>
+                    <li>Alex de Minaur (Chase Center)</li>
+                    <li>Francisco Cerundulo (Chase Center)</li>
+                    <li>Flavio Cobolli (Chase Center)</li>
+                    <li>João Fonseca (Chase Center)</li>
                 </ul>
             </Page>
             <Page
