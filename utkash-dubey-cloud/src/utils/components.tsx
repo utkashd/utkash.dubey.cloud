@@ -1,5 +1,7 @@
+import { Link } from "@tanstack/react-router";
+import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { createPortal } from "react-dom";
 
 export function Page({
     title,
@@ -10,10 +12,9 @@ export function Page({
     title: string;
     shortUniqueNameForId?: string;
     subtitle?: string;
-    children?: React.ReactNode;
+    children?: ReactNode;
 }) {
     useEffect(() => {
-        // When component mounts, scroll to the hash if it exists
         const hash = window.location.hash;
         if (hash) {
             const element = document.getElementById(hash.substring(1));
@@ -26,7 +27,7 @@ export function Page({
     return (
         <>
             {shortUniqueNameForId ? (
-                <h1 className="text-6xl max-w-300" id={shortUniqueNameForId}>
+                <h1 className="max-w-300 text-6xl" id={shortUniqueNameForId}>
                     <a
                         href={`#${shortUniqueNameForId}`}
                         className="hover:text-amber-600"
@@ -35,12 +36,12 @@ export function Page({
                     </a>
                 </h1>
             ) : (
-                <h1 className="text-6xl max-w-300">{title}</h1>
+                <h1 className="max-w-300 text-6xl">{title}</h1>
             )}
 
-            {subtitle && <span className="font-light text-sm">{subtitle}</span>}
+            {subtitle && <span className="text-sm font-light">{subtitle}</span>}
             {children && (
-                <div className="pt-12 pb-18 max-w-280">{children}</div>
+                <div className="max-w-280 pt-12 pb-18">{children}</div>
             )}
         </>
     );
@@ -51,8 +52,8 @@ export function StyledLink({
     children,
     onClick,
 }: {
-    to: string;
-    children: React.ReactNode;
+    to: "/" | "/writing" | "/cool-stuff" | "/food" | "/bracket";
+    children: ReactNode;
     onClick?: () => void;
 }) {
     return (
@@ -70,7 +71,7 @@ export function InlineTextFootnoteModal({
     jsx,
 }: {
     title?: string;
-    jsx: React.ReactNode;
+    jsx: ReactNode;
     children: string;
 }) {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -96,26 +97,29 @@ export function InlineTextFootnoteModal({
     return (
         <>
             <button
+                type="button"
                 onClick={() => setIsOpen(true)}
-                className="text-amber-300 hover:text-amber-600 underline"
+                className="text-amber-300 underline hover:text-amber-600"
             >
                 <sup>{children}</sup>
             </button>
-            {isOpen && (
-                <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300 ease-out">
-                    <div
-                        ref={modalRef}
-                        className="bg-amber-950 p-6 rounded-2xl shadow-2xl max-w-md w-full relative transform transition-all duration-300 ease-out scale-100"
-                    >
-                        {title && (
-                            <h2 className="text-lg font-semibold mb-4">
-                                {title}
-                            </h2>
-                        )}
-                        <p>{jsx}</p>
-                    </div>
-                </div>
-            )}{" "}
+            {isOpen &&
+                createPortal(
+                    <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm transition-opacity duration-300 ease-out">
+                        <div
+                            ref={modalRef}
+                            className="relative w-full max-w-md scale-100 rounded-2xl bg-amber-950 p-6 shadow-2xl transition-all duration-300 ease-out"
+                        >
+                            {title && (
+                                <h2 className="mb-4 text-lg font-semibold">
+                                    {title}
+                                </h2>
+                            )}
+                            {jsx}
+                        </div>
+                    </div>,
+                    document.body,
+                )}{" "}
         </>
     );
 }

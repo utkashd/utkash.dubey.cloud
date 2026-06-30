@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { useState } from "react";
 import { Page } from "../utils/components";
 
@@ -55,13 +56,11 @@ function BracketResult({ bracketState }: { bracketState: BracketState }) {
                 </p>
             );
         case "winner":
-            return (
-                <h2 className="text-3xl font-bold">🏆 {bs.winner!} wins!</h2>
-            );
+            return <h2 className="text-3xl font-bold">🏆 {bs.winner} wins!</h2>;
     }
 }
 
-function BracketResultModal({ jsx }: { jsx: React.ReactNode }) {
+function BracketResultModal({ jsx }: { jsx: ReactNode }) {
     return (
         <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300 ease-out">
             <div className="bg-amber-950 p-6 rounded-2xl shadow-2xl max-w-md w-full relative transform transition-all duration-300 ease-out scale-100">
@@ -116,8 +115,8 @@ puzzle from target`;
         setIsModalOpen(true);
         for (let round = 1; round < numRounds + 1; round++) {
             for (let i = 0; i < activitiesInTheRound.length; i = i + 2) {
-                let activityOne = activitiesInTheRound[i];
-                let activityTwo = activitiesInTheRound[i + 1];
+                const activityOne = activitiesInTheRound[i];
+                const activityTwo = activitiesInTheRound[i + 1];
 
                 setBracketState({
                     state: "roundStart",

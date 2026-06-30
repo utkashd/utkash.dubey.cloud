@@ -1,8 +1,9 @@
+import type { ReactElement, ReactNode } from "react";
 import { useEffect } from "react";
 import { InlineTextFootnoteModal } from "../utils/components";
 
 export function Writing() {
-    const BLOG_POST_COMPONENT_FUNCTIONS: (() => React.ReactElement)[] = [
+    const BLOG_POST_COMPONENT_FUNCTIONS: (() => ReactElement)[] = [
         SolarBatteries,
         KorraEssay,
     ];
@@ -28,7 +29,7 @@ function BlogPost({
     shortUniqueNameForId,
 }: {
     title: string;
-    children?: React.ReactNode;
+    children?: ReactNode;
     versionHistory: { dateWritten: string; dateLastEdited?: string };
     shortUniqueNameForId: string;
 }) {
@@ -411,7 +412,8 @@ function KorraEssay() {
                 arises when a group of four extremists break out of prison.
                 These extremists are led by Zaheer, a staunch anarchist, whose
                 aim is to end the Avatar entirely—he plans to kill Korra while
-                she's in the Avatar state, so that the reincarnation cycle ends.{" "}
+                she's in the Avatar state, so that the reincarnation cycle
+                ends.{" "}
             </p>
             <br />
             <p>
