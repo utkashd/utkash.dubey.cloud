@@ -3,17 +3,16 @@ import { Page } from "../utils/components";
 export function Food() {
     return (
         <>
-            <GoodBayAreaFood />
+            <GoodFood />
             <HopingToTry />
             <NeedsImprovement />
-            <CookingIdeas />
         </>
     );
 }
 
-function GoodBayAreaFood() {
+function GoodFood() {
     return (
-        <Page title="good bay area food" shortUniqueNameForId="good-food">
+        <Page title="good food" shortUniqueNameForId="good-food">
             <ul>
                 <li>
                     <a
@@ -70,6 +69,15 @@ function GoodBayAreaFood() {
                         Mikonos Grill
                     </a>
                 </li>
+                <li>
+                    <a
+                        href="https://www.hamdiseattle.com/"
+                        target="_blank"
+                        className="text-amber-300 hover:text-amber-600 underline"
+                    >
+                        Hamdi
+                    </a>
+                </li>
             </ul>
         </Page>
     );
@@ -116,24 +124,6 @@ function NeedsImprovement() {
                     </a>
                 </li>
                 <li>Zareen's</li>
-            </ul>
-        </Page>
-    );
-}
-
-function CookingIdeas() {
-    return (
-        <Page
-            title="cooking ideas to test"
-            shortUniqueNameForId="cooking-ideas"
-        >
-            <ul>
-                <li>pain au chocolat + hazelnut praliné hot chocolate</li>
-                <li>
-                    oak-infused brown butter ice cream + chocolate tuile +
-                    something
-                </li>
-                <li>buddha's hand/pomelo/yuzu cherry lemonade</li>
             </ul>
         </Page>
     );
