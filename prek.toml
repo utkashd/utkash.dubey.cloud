@@ -18,7 +18,7 @@ rev = "v0.48.0"
 # `utkash-dubey-cloud` throughout this file.
 [[repos]]
 hooks = [
-    { id = "tsc-site", name = "tsc site", entry = "pnpm --dir utkash-dubey-cloud-new exec tsc -p tsconfig.json --noEmit", language = "system", files = "^utkash-dubey-cloud-new/", types_or = [
+    { id = "tsc", name = "tsc", entry = "pnpm --dir utkash-dubey-cloud-new exec tsc -p tsconfig.json --noEmit", language = "system", files = "^utkash-dubey-cloud-new/", types_or = [
         "ts",
         "tsx",
     ], pass_filenames = false },
