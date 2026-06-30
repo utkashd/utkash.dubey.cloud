@@ -1,8 +1,8 @@
 [[repos]]
 hooks = [
-    { id = "check-added-large-files", files = "^utkash-dubey-cloud/" },
-    { id = "check-yaml", files = "^utkash-dubey-cloud/" },
-    { id = "end-of-file-fixer", files = "^utkash-dubey-cloud/", args = [
+    { id = "check-added-large-files" },
+    { id = "check-yaml" },
+    { id = "end-of-file-fixer", args = [
         "--fix",
     ] },
 ]
@@ -10,13 +10,13 @@ repo = "https://github.com/pre-commit/pre-commit-hooks"
 rev = "v6.0.0"
 
 [[repos]]
-hooks = [{ id = "markdownlint", files = "^utkash-dubey-cloud/" }]
+hooks = [{ id = "markdownlint" }]
 repo = "https://github.com/igorshubovych/markdownlint-cli"
 rev = "v0.48.0"
 
 [[repos]]
 hooks = [
-    { id = "tsc", name = "tsc", entry = "pnpm --dir utkash-dubey-cloud exec tsc -p tsconfig.json --noEmit", language = "system", files = "^utkash-dubey-cloud/", types_or = [
+    { id = "tsc", name = "tsc", entry = "pnpm --dir utkash-dubey-cloud exec tsc -p tsconfig.json --noEmit", language = "system", types_or = [
         "ts",
         "tsx",
     ], pass_filenames = false },
@@ -25,7 +25,7 @@ repo = "local"
 
 [[repos]]
 hooks = [
-    { id = "prettier", name = "prettier", entry = "utkash-dubey-cloud/node_modules/.bin/prettier --write --ignore-unknown", language = "system", files = "^utkash-dubey-cloud/", types_or = [
+    { id = "prettier", name = "prettier", entry = "utkash-dubey-cloud/node_modules/.bin/prettier --write --ignore-unknown", language = "system", types_or = [
         "css",
         "javascript",
         "json",
@@ -40,7 +40,7 @@ repo = "local"
 
 [[repos]]
 hooks = [
-    { id = "eslint", name = "eslint", entry = "utkash-dubey-cloud/node_modules/.bin/eslint --fix --no-warn-ignored", language = "system", files = "^utkash-dubey-cloud/", types_or = [
+    { id = "eslint", name = "eslint", entry = "utkash-dubey-cloud/node_modules/.bin/eslint --fix --no-warn-ignored", language = "system", types_or = [
         "javascript",
         "jsx",
         "ts",
