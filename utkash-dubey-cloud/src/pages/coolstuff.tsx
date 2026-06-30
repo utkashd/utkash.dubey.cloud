@@ -223,7 +223,7 @@ function FavoriteAlbums() {
                                 </ul>
                             </li>
                         );
-                    }
+                    },
                 )}
             </ul>
         </Page>

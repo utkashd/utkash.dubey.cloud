@@ -1,9 +1,19 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
-import tailwindcss from "@tailwindcss/vite";
-import { cloudflare } from "@cloudflare/vite-plugin";
+import { devtools } from "@tanstack/devtools-vite";
 
-// https://vite.dev/config/
-export default defineConfig({
-    plugins: [react(), tailwindcss(), cloudflare()],
+import { tanstackRouter } from "@tanstack/router-plugin/vite";
+
+import viteReact from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+
+const config = defineConfig({
+    resolve: { tsconfigPaths: true },
+    plugins: [
+        devtools(),
+        tailwindcss(),
+        tanstackRouter({ target: "react", autoCodeSplitting: true }),
+        viteReact(),
+    ],
 });
+
+export default config;
