@@ -7,3 +7,9 @@
 5. why is their documentation so gd out of date
 6. change `main` in the wrangler config file to `src/main.tsx` because we don't
    need the worker
+
+## setup
+
+```sh
+pnpm dlx @tanstack/cli create --router-only
+```
