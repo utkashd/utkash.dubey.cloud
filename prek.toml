@@ -1,0 +1,52 @@
+[[repos]]
+hooks = [
+    { id = "check-added-large-files", files = "^utkash-dubey-cloud-new/" },
+    { id = "check-yaml", files = "^utkash-dubey-cloud-new/" },
+    { id = "end-of-file-fixer", files = "^utkash-dubey-cloud-new/", args = [
+        "--fix",
+    ] },
+]
+repo = "https://github.com/pre-commit/pre-commit-hooks"
+rev = "v6.0.0"
+
+[[repos]]
+hooks = [{ id = "markdownlint", files = "^utkash-dubey-cloud-new/" }]
+repo = "https://github.com/igorshubovych/markdownlint-cli"
+rev = "v0.48.0"
+
+# When the migration is complete, replace `utkash-dubey-cloud-new` with
+# `utkash-dubey-cloud` throughout this file.
+[[repos]]
+hooks = [
+    { id = "tsc-site", name = "tsc site", entry = "pnpm --dir utkash-dubey-cloud-new exec tsc -p tsconfig.json --noEmit", language = "system", files = "^utkash-dubey-cloud-new/", types_or = [
+        "ts",
+        "tsx",
+    ], pass_filenames = false },
+]
+repo = "local"
+
+[[repos]]
+hooks = [
+    { id = "prettier", name = "prettier", entry = "utkash-dubey-cloud-new/node_modules/.bin/prettier --write --ignore-unknown", language = "system", files = "^utkash-dubey-cloud-new/", types_or = [
+        "css",
+        "javascript",
+        "json",
+        "jsx",
+        "scss",
+        "ts",
+        "tsx",
+        "yaml",
+    ], exclude = "^utkash-dubey-cloud-new/(dist/|\\.tanstack/|src/routeTree\\.gen\\.ts$|pnpm-lock\\.yaml$)", require_serial = true },
+]
+repo = "local"
+
+[[repos]]
+hooks = [
+    { id = "eslint", name = "eslint", entry = "utkash-dubey-cloud-new/node_modules/.bin/eslint --fix --no-warn-ignored", language = "system", files = "^utkash-dubey-cloud-new/", types_or = [
+        "javascript",
+        "jsx",
+        "ts",
+        "tsx",
+    ], exclude = "^utkash-dubey-cloud-new/(dist/|\\.tanstack/|src/routeTree\\.gen\\.ts$)", require_serial = true },
+]
+repo = "local"
