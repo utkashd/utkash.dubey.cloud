@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 
 export function Page({
     title,
@@ -96,26 +97,29 @@ export function InlineTextFootnoteModal({
     return (
         <>
             <button
+                type="button"
                 onClick={() => setIsOpen(true)}
                 className="text-amber-300 underline hover:text-amber-600"
             >
                 <sup>{children}</sup>
             </button>
-            {isOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm transition-opacity duration-300 ease-out">
-                    <div
-                        ref={modalRef}
-                        className="relative w-full max-w-md scale-100 rounded-2xl bg-amber-950 p-6 shadow-2xl transition-all duration-300 ease-out"
-                    >
-                        {title && (
-                            <h2 className="mb-4 text-lg font-semibold">
-                                {title}
-                            </h2>
-                        )}
-                        <p>{jsx}</p>
-                    </div>
-                </div>
-            )}{" "}
+            {isOpen &&
+                createPortal(
+                    <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm transition-opacity duration-300 ease-out">
+                        <div
+                            ref={modalRef}
+                            className="relative w-full max-w-md scale-100 rounded-2xl bg-amber-950 p-6 shadow-2xl transition-all duration-300 ease-out"
+                        >
+                            {title && (
+                                <h2 className="mb-4 text-lg font-semibold">
+                                    {title}
+                                </h2>
+                            )}
+                            {jsx}
+                        </div>
+                    </div>,
+                    document.body,
+                )}{" "}
         </>
     );
 }
