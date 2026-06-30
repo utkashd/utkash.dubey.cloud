@@ -13,3 +13,15 @@
 ```sh
 pnpm dlx @tanstack/cli create --router-only
 ```
+
+## checks
+
+This repo uses [`prek`](https://github.com/j178/prek) for pre-commit checks.
+
+```sh
+prek install
+prek run --all-files
+```
+
+The hooks cover TypeScript, Prettier, ESLint, Markdown, YAML, EOF fixes, and
+large-file checks.
