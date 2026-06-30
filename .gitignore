@@ -19,3 +19,4 @@ dist-ssr
 .vinxi
 __unconfig*
 todos.json
+.pnpm-store
