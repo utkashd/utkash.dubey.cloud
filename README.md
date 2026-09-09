@@ -22,6 +22,3 @@ This repo uses [`prek`](https://github.com/j178/prek) for pre-commit checks.
 prek install
 prek run --all-files
 ```
-
-The hooks cover TypeScript, Prettier, ESLint, Markdown, YAML, EOF fixes, and
-large-file checks.

@@ -1,14 +1,35 @@
-import type { ReactElement, ReactNode } from "react";
+import type { ComponentType, ReactElement, ReactNode } from "react";
 import { useEffect } from "react";
 import { InlineTextFootnoteModal } from "../utils/components";
 
+const MARKDOWN_POST_MODULES = import.meta.glob<{ default: ComponentType }>(
+    ["../content/writing/*.md", "!../content/writing/_*.md"],
+    { eager: true },
+);
+
+const MARKDOWN_POST_COMPONENTS = Object.entries(MARKDOWN_POST_MODULES)
+    .sort(([pathA], [pathB]) => pathB.localeCompare(pathA))
+    .map(([, module]) => module.default);
+
 export function Writing() {
     const BLOG_POST_COMPONENT_FUNCTIONS: (() => ReactElement)[] = [
+        HowToInterviewEngineer,
         SolarBatteries,
         KorraEssay,
     ];
     return (
         <>
+            {MARKDOWN_POST_COMPONENTS.map((MarkdownPost, index) => (
+                <div key={`markdown-${index}`}>
+                    <div className="max-w-280">
+                        <article className="prose prose-invert max-w-none pb-18 prose-a:text-amber-300 prose-a:hover:text-amber-600 prose-h1:text-5xl">
+                            <MarkdownPost />
+                        </article>
+                    </div>
+                    <hr />
+                    <br />
+                </div>
+            ))}
             {BLOG_POST_COMPONENT_FUNCTIONS.map((fxn, index) => {
                 return (
                     <div key={index}>
@@ -528,6 +549,21 @@ function KorraEssay() {
             >
                 https://www.youtube.com/watch?v=6xW83hx4P7M
             </a>
+        </BlogPost>
+    );
+}
+
+function HowToInterviewEngineer() {
+    return (
+        <BlogPost
+            title={"how to interview an engineer"}
+            versionHistory={{
+                dateWritten: "aug 2026",
+            }}
+            shortUniqueNameForId={"interview"}
+        >
+            <p>how to interview engs</p>
+            <p>disclaimers</p>
         </BlogPost>
     );
 }
