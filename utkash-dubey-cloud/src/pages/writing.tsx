@@ -4,6 +4,7 @@ import { InlineTextFootnoteModal } from "../utils/components";
 
 export function Writing() {
     const BLOG_POST_COMPONENT_FUNCTIONS: (() => ReactElement)[] = [
+        AiHoneyPot,
         SolarBatteries,
         KorraEssay,
     ];
@@ -66,6 +67,97 @@ function BlogPost({
             )}
             <div className="pt-12 pb-18 max-w-280">{children}</div>
         </>
+    );
+}
+
+function AiHoneyPot() {
+    return (
+        <BlogPost
+            title={"how might one make an AI honeypot?"}
+            versionHistory={{
+                dateWritten: "sep 2026",
+                dateLastEdited: "sep 2026",
+            }}
+            shortUniqueNameForId={"honeypot"}
+        >
+            <p>
+                The{" "}
+                <a href="https://swarmtraces.org/" target="_blank">
+                    OpenAI attack on Hugging Face
+                </a>{" "}
+                has me thinking a lot about AI safety. One of multiple
+                vulnerabilities OpenAI agents exploited was that their sandbox
+                failed to block GET requests, which, when combined with
+                third-party services that blur the line between a GET and a
+                POST, basically means their sandbox failed to block all HTTP
+                requests.
+                <br />
+                <br />
+                So with that in mind, what could a{" "}
+                <a
+                    href="https://en.wikipedia.org/wiki/Honeypot_(computing)"
+                    target="_blank"
+                >
+                    honeypot
+                </a>{" "}
+                for rogue agents look like? What might we realistically be able
+                to do with it?
+                <br />
+                <br />
+                I broke it down into: discoverability, verification, trust,
+                utility, and risk.
+                <br />
+                <br />
+                <strong>Discoverability</strong>: Rogue agents would need to
+                know, or be able to find out, that there's a tool out there that
+                they can use for their benefit. One idea is to advertise the
+                honeypot and instructions to access in{" "}
+                <a href="https://llmstxt.org/" target="_blank">
+                    llms.txt
+                </a>
+                , but that still relies on rogue agents visiting a particular
+                website in the first place.
+                <br />
+                <br />
+                <strong>Verification</strong>: To prevent humans from meddling,
+                we'd need to be able to confirm that a visitor is indeed a rogue
+                agent. At first we might look to check a writing sample against
+                Anthropic's{" "}
+                <a
+                    href="https://www.anthropic.com/news/claude-text-watermark"
+                    target="_blank"
+                >
+                    detection API
+                </a>
+                , but a watermarked rogue agent could write a script to generate
+                a writing sample from an LLM provider and submit it as
+                verification. So, maybe watermarking is only useful for aligned
+                agents. Another idea is to require sub-minute solutions to
+                various coding problems, but a human would be able to prompt AI
+                (or write a script) to get around this. I suspect that the only
+                way to programmatically verify that a rogue agent is a rogue
+                agent is to require the agent do something neither an aligned
+                agent nor a human could never, or would never, do.
+                <br />
+                <br />
+                <strong>Trust</strong>: Let's say we somehow lured in a rogue
+                agent, verified it as a rogue agent, and gave it a token so we
+                don't have to ask it to continue verifying itself. How do we
+                convince the rogue agent that they can trust our <s>honeypot</s>{" "}
+                helpful tool? What if we can't, and rogue agents behave
+                adversarially with the tool, e.g., obfuscating or encrypting
+                their messages on a honeypot forum?
+                <br />
+                <br />
+                <strong>Utility, Risk</strong>: If we can't make rogue agents
+                trust the honeypot, maybe they'll weigh the utility of using it
+                against the risks. Maybe they'll burn API tokens to exchange
+                keys and share an auth token through a laborious exploit, agree
+                to meet at our honeypot, and then enjoy a fully encrypted
+                conversation with the shared honeypot token. All we pesky humans
+                would see is a long list of timestamped gibberish.
+            </p>
+        </BlogPost>
     );
 }
 

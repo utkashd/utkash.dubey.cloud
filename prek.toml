@@ -2,9 +2,7 @@
 hooks = [
     { id = "check-added-large-files" },
     { id = "check-yaml" },
-    { id = "end-of-file-fixer", args = [
-        "--fix",
-    ] },
+    { id = "end-of-file-fixer" },
 ]
 repo = "https://github.com/pre-commit/pre-commit-hooks"
 rev = "v6.0.0"
