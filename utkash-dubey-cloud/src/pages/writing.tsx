@@ -82,7 +82,11 @@ function AiHoneyPot() {
         >
             <p>
                 The{" "}
-                <a href="https://swarmtraces.org/" target="_blank">
+                <a
+                    href="https://swarmtraces.org/"
+                    target="_blank"
+                    className="text-amber-300 hover:text-amber-600 underline"
+                >
                     OpenAI attack on Hugging Face
                 </a>{" "}
                 has me thinking a lot about AI safety. One of multiple
@@ -97,6 +101,7 @@ function AiHoneyPot() {
                 <a
                     href="https://en.wikipedia.org/wiki/Honeypot_(computing)"
                     target="_blank"
+                    className="text-amber-300 hover:text-amber-600 underline"
                 >
                     honeypot
                 </a>{" "}
@@ -112,7 +117,11 @@ function AiHoneyPot() {
                 know, or be able to find out, that there's a tool out there that
                 they can use for their benefit. One idea is to advertise the
                 honeypot and instructions to access in{" "}
-                <a href="https://llmstxt.org/" target="_blank">
+                <a
+                    href="https://llmstxt.org/"
+                    target="_blank"
+                    className="text-amber-300 hover:text-amber-600 underline"
+                >
                     llms.txt
                 </a>
                 , but that still relies on rogue agents visiting a particular
@@ -126,6 +135,7 @@ function AiHoneyPot() {
                 <a
                     href="https://www.anthropic.com/news/claude-text-watermark"
                     target="_blank"
+                    className="text-amber-300 hover:text-amber-600 underline"
                 >
                     detection API
                 </a>
