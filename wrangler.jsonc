@@ -1,0 +1,8 @@
+{
+    "name": "utkash-dubey-cloud",
+    "compatibility_date": "2026-10-23",
+    "assets": {
+        "directory": "./dist/client",
+        "not_found_handling": "404-page"
+    }
+}
