@@ -34,7 +34,7 @@ repo = "local"
 [[repos.hooks]]
 id = "tsc"
 name = "tsc"
-entry = "pnpm --dir utkash-dubey-cloud exec tsc -p tsconfig.json --noEmit"
+entry = "pnpm exec tsc -p tsconfig.json --noEmit"
 language = "system"
 types_or = ["ts", "tsx"]
 pass_filenames = false
@@ -45,10 +45,10 @@ repo = "local"
 [[repos.hooks]]
 id = "prettier"
 name = "prettier"
-entry = "utkash-dubey-cloud/node_modules/.bin/prettier --write --ignore-unknown"
+entry = "node_modules/.bin/prettier --write --ignore-unknown"
 language = "system"
 types_or = ["css", "javascript", "json", "jsx", "scss", "ts", "tsx", "yaml"]
-exclude = "(^|/)src/routeTree\\.gen\\.ts$|^utkash-dubey-cloud/(dist/|\\.tanstack/|pnpm-lock\\.yaml$)"
+exclude = "(^|/)src/routeTree\\.gen\\.ts$|^(dist/|\\.tanstack/|pnpm-lock\\.yaml$)"
 require_serial = true
 
 [[repos]]
@@ -57,8 +57,8 @@ repo = "local"
 [[repos.hooks]]
 id = "eslint"
 name = "eslint"
-entry = "utkash-dubey-cloud/node_modules/.bin/eslint --fix --no-warn-ignored"
+entry = "node_modules/.bin/eslint --fix --no-warn-ignored"
 language = "system"
 types_or = ["javascript", "jsx", "ts", "tsx"]
-exclude = "(^|/)src/routeTree\\.gen\\.ts$|^utkash-dubey-cloud/(dist/|\\.tanstack/)"
+exclude = "(^|/)src/routeTree\\.gen\\.ts$|^(dist/|\\.tanstack/)"
 require_serial = true

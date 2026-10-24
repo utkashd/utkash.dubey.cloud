@@ -1,4 +1,9 @@
-import { HeadContent, Scripts, createRootRoute } from "@tanstack/react-router";
+import {
+    HeadContent,
+    Link,
+    Scripts,
+    createRootRoute,
+} from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 
@@ -15,10 +20,15 @@ export const Route = createRootRoute({
                 content: "width=device-width, initial-scale=1",
             },
             {
-                title: "TanStack Start Starter",
+                title: "Utkash Dubey",
             },
         ],
         links: [
+            {
+                rel: "icon",
+                type: "image/png",
+                href: "/initials.png",
+            },
             {
                 rel: "stylesheet",
                 href: appCss,
@@ -42,7 +52,18 @@ function RootDocument({ children }: { children: React.ReactNode }) {
                 <HeadContent />
             </head>
             <body>
-                {children}
+                <div className="mx-auto max-w-4xl p-8 leading-relaxed">
+                    <nav
+                        aria-label="Main navigation"
+                        className="mb-10 flex flex-wrap gap-6 underline"
+                    >
+                        <Link to="/">me</Link>
+                        <Link to="/writing">writing</Link>
+                        <Link to="/cool-stuff">cool stuff</Link>
+                        <Link to="/food">food</Link>
+                    </nav>
+                    <main>{children}</main>
+                </div>
                 <TanStackDevtools
                     config={{
                         position: "bottom-right",

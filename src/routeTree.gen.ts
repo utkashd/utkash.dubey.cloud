@@ -10,33 +10,73 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BracketRouteImport } from './routes/bracket'
+import { Route as CoolStuffRouteImport } from './routes/cool-stuff'
+import { Route as FoodRouteImport } from './routes/food'
+import { Route as WritingRouteImport } from './routes/writing'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BracketRoute = BracketRouteImport.update({
+  id: '/bracket',
+  path: '/bracket',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoolStuffRoute = CoolStuffRouteImport.update({
+  id: '/cool-stuff',
+  path: '/cool-stuff',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FoodRoute = FoodRouteImport.update({
+  id: '/food',
+  path: '/food',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WritingRoute = WritingRouteImport.update({
+  id: '/writing',
+  path: '/writing',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/bracket': typeof BracketRoute
+  '/cool-stuff': typeof CoolStuffRoute
+  '/food': typeof FoodRoute
+  '/writing': typeof WritingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/bracket': typeof BracketRoute
+  '/cool-stuff': typeof CoolStuffRoute
+  '/food': typeof FoodRoute
+  '/writing': typeof WritingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/bracket': typeof BracketRoute
+  '/cool-stuff': typeof CoolStuffRoute
+  '/food': typeof FoodRoute
+  '/writing': typeof WritingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/bracket' | '/cool-stuff' | '/food' | '/writing'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/bracket' | '/cool-stuff' | '/food' | '/writing'
+  id: '__root__' | '/' | '/bracket' | '/cool-stuff' | '/food' | '/writing'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BracketRoute: typeof BracketRoute
+  CoolStuffRoute: typeof CoolStuffRoute
+  FoodRoute: typeof FoodRoute
+  WritingRoute: typeof WritingRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +88,43 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bracket': {
+      id: '/bracket'
+      path: '/bracket'
+      fullPath: '/bracket'
+      preLoaderRoute: typeof BracketRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cool-stuff': {
+      id: '/cool-stuff'
+      path: '/cool-stuff'
+      fullPath: '/cool-stuff'
+      preLoaderRoute: typeof CoolStuffRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/food': {
+      id: '/food'
+      path: '/food'
+      fullPath: '/food'
+      preLoaderRoute: typeof FoodRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/writing': {
+      id: '/writing'
+      path: '/writing'
+      fullPath: '/writing'
+      preLoaderRoute: typeof WritingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BracketRoute: BracketRoute,
+  CoolStuffRoute: CoolStuffRoute,
+  FoodRoute: FoodRoute,
+  WritingRoute: WritingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -63,7 +63,7 @@ function BracketResult({ bracketState }: { bracketState: BracketState }) {
 function BracketResultModal({ jsx }: { jsx: ReactNode }) {
     return (
         <div className="fixed inset-0 backdrop-blur-sm flex items-center justify-center z-50 transition-opacity duration-300 ease-out">
-            <div className="bg-amber-950 p-6 rounded-2xl shadow-2xl max-w-md w-full relative transform transition-all duration-300 ease-out scale-100">
+            <div className="bg-white p-6 rounded-2xl shadow-2xl max-w-md w-full relative transform transition-all duration-300 ease-out scale-100">
                 {jsx}
             </div>
         </div>
@@ -197,7 +197,7 @@ You need 2, 4, 8, 16, or 32 activities.`);
             />
             <button
                 onClick={tournamentTime}
-                className="text-amber-300 hover:text-amber-600 underline"
+                className="hover:text-blue-700 underline"
             >
                 Go!
             </button>
