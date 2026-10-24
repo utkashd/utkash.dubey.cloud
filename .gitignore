@@ -1,16 +1,8 @@
-*.log
 node_modules
+.DS_Store
 dist
 dist-ssr
 *.local
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-.dev.vars*
 .env
 .nitro
 .tanstack

@@ -1,48 +1,63 @@
 [[repos]]
-hooks = [
-    { id = "check-added-large-files" },
-    { id = "check-yaml" },
-    { id = "end-of-file-fixer" },
-]
 repo = "https://github.com/pre-commit/pre-commit-hooks"
 rev = "v6.0.0"
 
+[[repos.hooks]]
+id = "check-added-large-files"
+
+[[repos.hooks]]
+id = "check-yaml"
+
+[[repos.hooks]]
+id = "end-of-file-fixer"
+
 [[repos]]
-hooks = [{ id = "markdownlint" }]
 repo = "https://github.com/igorshubovych/markdownlint-cli"
 rev = "v0.48.0"
 
-[[repos]]
-hooks = [
-    { id = "tsc", name = "tsc", entry = "pnpm --dir utkash-dubey-cloud exec tsc -p tsconfig.json --noEmit", language = "system", types_or = [
-        "ts",
-        "tsx",
-    ], pass_filenames = false },
-]
-repo = "local"
+[[repos.hooks]]
+id = "markdownlint"
+args = ["--config", ".markdownlint.jsonc"]
 
 [[repos]]
-hooks = [
-    { id = "prettier", name = "prettier", entry = "utkash-dubey-cloud/node_modules/.bin/prettier --write --ignore-unknown", language = "system", types_or = [
-        "css",
-        "javascript",
-        "json",
-        "jsx",
-        "scss",
-        "ts",
-        "tsx",
-        "yaml",
-    ], exclude = "^utkash-dubey-cloud/(dist/|\\.tanstack/|src/routeTree\\.gen\\.ts$|pnpm-lock\\.yaml$)", require_serial = true },
-]
-repo = "local"
+repo = "https://github.com/ComPWA/taplo-pre-commit"
+rev = "v0.9.3"
+
+[[repos.hooks]]
+id = "taplo-format"
+args = ["--config", ".taplo.toml"]
 
 [[repos]]
-hooks = [
-    { id = "eslint", name = "eslint", entry = "utkash-dubey-cloud/node_modules/.bin/eslint --fix --no-warn-ignored", language = "system", types_or = [
-        "javascript",
-        "jsx",
-        "ts",
-        "tsx",
-    ], exclude = "^utkash-dubey-cloud/(dist/|\\.tanstack/|src/routeTree\\.gen\\.ts$)", require_serial = true },
-]
 repo = "local"
+
+[[repos.hooks]]
+id = "tsc"
+name = "tsc"
+entry = "pnpm --dir utkash-dubey-cloud exec tsc -p tsconfig.json --noEmit"
+language = "system"
+types_or = ["ts", "tsx"]
+pass_filenames = false
+
+[[repos]]
+repo = "local"
+
+[[repos.hooks]]
+id = "prettier"
+name = "prettier"
+entry = "utkash-dubey-cloud/node_modules/.bin/prettier --write --ignore-unknown"
+language = "system"
+types_or = ["css", "javascript", "json", "jsx", "scss", "ts", "tsx", "yaml"]
+exclude = "(^|/)src/routeTree\\.gen\\.ts$|^utkash-dubey-cloud/(dist/|\\.tanstack/|pnpm-lock\\.yaml$)"
+require_serial = true
+
+[[repos]]
+repo = "local"
+
+[[repos.hooks]]
+id = "eslint"
+name = "eslint"
+entry = "utkash-dubey-cloud/node_modules/.bin/eslint --fix --no-warn-ignored"
+language = "system"
+types_or = ["javascript", "jsx", "ts", "tsx"]
+exclude = "(^|/)src/routeTree\\.gen\\.ts$|^utkash-dubey-cloud/(dist/|\\.tanstack/)"
+require_serial = true

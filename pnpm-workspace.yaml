@@ -1,0 +1,7 @@
+minimumReleaseAge: 12960 # 9 days in minutes
+blockExoticSubdeps: true
+allowBuilds:
+    esbuild: true
+    lightningcss: true
+    sharp: true
+    unrs-resolver: true
