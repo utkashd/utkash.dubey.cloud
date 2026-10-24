@@ -1,6 +1,7 @@
 {
     "name": "utkash.dubey.cloud",
     "private": true,
+    "packageManager": "pnpm@12.15.0",
     "type": "module",
     "imports": {
         "#/*": "./src/*"
