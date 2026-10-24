@@ -85,7 +85,7 @@ function AiHoneyPot() {
                 <a
                     href="https://swarmtraces.org/"
                     target="_blank"
-                    className="text-amber-300 hover:text-amber-600 underline"
+                    className="hover:text-blue-700 underline"
                 >
                     OpenAI attack on Hugging Face
                 </a>{" "}
@@ -101,7 +101,7 @@ function AiHoneyPot() {
                 <a
                     href="https://en.wikipedia.org/wiki/Honeypot_(computing)"
                     target="_blank"
-                    className="text-amber-300 hover:text-amber-600 underline"
+                    className="hover:text-blue-700 underline"
                 >
                     honeypot
                 </a>{" "}
@@ -120,7 +120,7 @@ function AiHoneyPot() {
                 <a
                     href="https://llmstxt.org/"
                     target="_blank"
-                    className="text-amber-300 hover:text-amber-600 underline"
+                    className="hover:text-blue-700 underline"
                 >
                     llms.txt
                 </a>
@@ -135,7 +135,7 @@ function AiHoneyPot() {
                 <a
                     href="https://www.anthropic.com/news/claude-text-watermark"
                     target="_blank"
-                    className="text-amber-300 hover:text-amber-600 underline"
+                    className="hover:text-blue-700 underline"
                 >
                     detection API
                 </a>
@@ -328,7 +328,7 @@ function KorraEssay() {
                     <a
                         href="https://www.youtube.com/watch?v=MJ9Fi4izrYc"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         in the Old Republic
                     </a>
@@ -380,7 +380,7 @@ function KorraEssay() {
                 <a
                     href="https://www.youtube.com/watch?v=uUjDFm5H27g"
                     target="_blank"
-                    className="text-amber-300 hover:text-amber-600 underline"
+                    className="hover:text-blue-700 underline"
                 >
                     "I'm the Avatar! You gotta deal with it!"
                 </a>
@@ -390,7 +390,7 @@ function KorraEssay() {
                 <a
                     href="https://www.youtube.com/watch?v=kIXuQdS4mPM"
                     target="_blank"
-                    className="text-amber-300 hover:text-amber-600 underline"
+                    className="hover:text-blue-700 underline"
                 >
                     https://www.youtube.com/watch?v=kIXuQdS4mPM
                 </a>{" "}
@@ -408,25 +408,29 @@ function KorraEssay() {
                 <a
                     href="https://youtu.be/bmKaQqinWKY?t=125"
                     target="_blank"
-                    className="text-amber-300 hover:text-amber-600 underline"
+                    className="hover:text-blue-700 underline"
                 >
                     https://youtu.be/bmKaQqinWKY?t=125
                 </a>{" "}
                 (watch till 2:40)
             </p>
             <br />
-            <em>TLoK</em> is riddled with many more issues. It introduced far
-            too many characters too quickly, which prevented the show from
-            properly establishing and developing any of them. <em>ATLA</em> was
-            blessed with 61 episodes and had 12 core characters, while{" "}
-            <em>TLoK</em> used its 52 episodes to distribute screen-time and
-            dialogue over 22—nearly twice as many. On top of that, since{" "}
-            <em>TLoK</em> didn't have one central conflict; it needed to
-            introduce, develop, and resolve new antagonists in{" "}
-            <strong>each</strong> of its four seasons, which came at the expense
-            of time for its protagonists. The result is a hodgepodge of rushed
-            relationships, a reliance on tropes to substitute for individuality,
-            unclear motivations, and generally weak characters.
+            <p>
+                <em>TLoK</em> is riddled with many more issues. It introduced
+                far too many characters too quickly, which prevented the show
+                from properly establishing and developing any of them.{" "}
+                <em>ATLA</em> was blessed with 61 episodes and had 12 core
+                characters, while <em>TLoK</em> used its 52 episodes to
+                distribute screen-time and dialogue over 22—nearly twice as
+                many. On top of that, since <em>TLoK</em> didn't have one
+                central conflict; it needed to introduce, develop, and resolve
+                new antagonists in <strong>each</strong> of its four seasons,
+                which came at the expense of time for its protagonists. The
+                result is a hodgepodge of rushed relationships, a reliance on
+                tropes to substitute for individuality, unclear motivations, and
+                generally weak characters.
+            </p>
+            <br />
             <p>
                 However, I argue that much of the blame for <em>TLoK</em>'s
                 mediocrity falls on the network, and not the writers. Despite{" "}
@@ -479,28 +483,28 @@ function KorraEssay() {
                             <a
                                 href="https://avatar.fandom.com/wiki/Saber-tooth_moose_lion"
                                 target="_blank"
-                                className="text-amber-300 hover:text-amber-600 underline"
+                                className="hover:text-blue-700 underline"
                             >
                                 the
                             </a>{" "}
                             <a
                                 href="https://avatar.fandom.com/wiki/Turtle_duck"
                                 target="_blank"
-                                className="text-amber-300 hover:text-amber-600 underline"
+                                className="hover:text-blue-700 underline"
                             >
                                 many
                             </a>{" "}
                             <a
                                 href="https://avatar.fandom.com/wiki/Platypus_bear"
                                 target="_blank"
-                                className="text-amber-300 hover:text-amber-600 underline"
+                                className="hover:text-blue-700 underline"
                             >
                                 hybrid
                             </a>{" "}
                             <a
                                 href="https://avatar.fandom.com/wiki/Otter_penguin"
                                 target="_blank"
-                                className="text-amber-300 hover:text-amber-600 underline"
+                                className="hover:text-blue-700 underline"
                             >
                                 animals
                             </a>{" "}
@@ -525,15 +529,17 @@ function KorraEssay() {
                 series—you get the sense that he's ready to give up everything
                 for "true freedom."
             </p>
-            <br />" When we dispatch you in the Avatar State, the cycle will
-            end. So we lucky few, this band of brothers and sisters in anarchy,
-            are witnessing the beginning of an era of true freedom. Together, we
+            <br />
+            "When we dispatch you in the Avatar State, the cycle will end. So we
+            lucky few, this band of brothers and sisters in anarchy, are
+            witnessing the beginning of an era of true freedom. Together, we
             will forge a world without Kings and Queens—without borders or
             nations. Where Man's only allegiance is to himself, and those he
             loves. We will return to the true balance...of natural order. And
             though you will never again be reborn, your name will echo
-            throughout history: Korra, the last Avatar.
-            <p>&ndash;;Zaheer, to Korra</p>
+            throughout history: Korra, the last Avatar.""
+            <br />
+            <p>&ndash;Zaheer, to Korra</p>
             <br />
             <p>
                 Zaheer's whole schtick is essentially that anarchism is the only
@@ -593,7 +599,7 @@ function KorraEssay() {
                 <a
                     href="https://www.youtube.com/watch?v=jyfwJ-Q5I4A"
                     target="_blank"
-                    className="text-amber-300 hover:text-amber-600 underline"
+                    className="hover:text-blue-700 underline"
                 >
                     https://www.youtube.com/watch?v=jyfwJ-Q5I4A
                 </a>{" "}
@@ -626,7 +632,7 @@ function KorraEssay() {
             <a
                 href="https://www.youtube.com/watch?v=6xW83hx4P7M"
                 target="_blank"
-                className="text-amber-300 hover:text-amber-600 underline"
+                className="hover:text-blue-700 underline"
             >
                 https://www.youtube.com/watch?v=6xW83hx4P7M
             </a>

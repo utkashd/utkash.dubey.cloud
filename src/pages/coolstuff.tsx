@@ -213,7 +213,7 @@ function FavoriteAlbums() {
                                                 <a
                                                     href={albumInfo.aotyLink}
                                                     target="_blank"
-                                                    className="text-amber-300 hover:text-amber-600 underline"
+                                                    className="hover:text-blue-700 underline"
                                                 >
                                                     {albumInfo.albumName}
                                                 </a>
@@ -311,7 +311,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@w2kitchen"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             W2 Kitchen
                         </a>
@@ -320,7 +320,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@hueezer"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Huy Nguyen
                         </a>
@@ -329,7 +329,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@ChrisYoungCooks"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Chris Young
                         </a>
@@ -338,7 +338,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@MagicIngredients"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             小高姐的 Magic Ingredients
                         </a>
@@ -347,7 +347,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@theartofplating"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             The Art of Plating
                         </a>
@@ -356,7 +356,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@daywithmei"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             daywithmei
                         </a>
@@ -365,7 +365,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@lapatededom"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             La Pâte de Dom
                         </a>
@@ -374,7 +374,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@JulesCookingGlobal"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Jules Cooking
                         </a>
@@ -383,7 +383,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@ParkerHallberg"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Parker Hallberg
                         </a>
@@ -392,7 +392,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@WayofRamen"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Way of Ramen
                         </a>
@@ -401,7 +401,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@PastryLivingwithAya"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Pastry Living with Aya
                         </a>
@@ -410,7 +410,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@sheldoskitchen"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             sheldo's kitchen
                         </a>
@@ -419,7 +419,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@saintcavish"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             saintcavish
                         </a>
@@ -428,7 +428,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@PolylogCS"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Polylog
                         </a>
@@ -437,7 +437,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@tom-delalande"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Tom Delalande
                         </a>
@@ -446,7 +446,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@brycedotco"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Bryce Bostwick
                         </a>
@@ -455,7 +455,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@AntonPutra"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Anton Putra
                         </a>
@@ -464,7 +464,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@backpine"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             backpine labs
                         </a>
@@ -473,7 +473,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@kevinfaang"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Kevin Fang
                         </a>
@@ -482,7 +482,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@BridgeStuart"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Bridge Stuart
                         </a>
@@ -491,7 +491,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@AccentedCinema"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Accented Cinema
                         </a>
@@ -500,7 +500,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@TheHouseofTabula"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             The House of Tabula (FKA The Cinema Cartography)
                         </a>
@@ -509,7 +509,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@FramesOfEmpathy"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Frames of Empathy
                         </a>
@@ -518,7 +518,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@kaptainkristian"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             kaptainkristian
                         </a>
@@ -527,7 +527,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@LikeStoriesofOld"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Like Stories of Old
                         </a>
@@ -536,7 +536,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@youthnation1"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Logos Made Flesh
                         </a>
@@ -545,7 +545,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@NineNerdYards"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             NineNerdYards
                         </a>
@@ -554,7 +554,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@SolePorpoise"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             SolePorpoise
                         </a>
@@ -563,7 +563,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@trago6140"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             Trago
                         </a>
@@ -572,7 +572,7 @@ export function CoolStuff() {
                         <a
                             href="https://www.youtube.com/@WitandFolly"
                             target="_blank"
-                            className="text-amber-300 hover:text-amber-600 underline"
+                            className="hover:text-blue-700 underline"
                         >
                             wit and folly
                         </a>

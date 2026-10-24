@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
@@ -27,41 +26,21 @@ export function Page({
     return (
         <>
             {shortUniqueNameForId ? (
-                <h1 className="max-w-300 text-6xl" id={shortUniqueNameForId}>
+                <h1 className="text-4xl font-bold" id={shortUniqueNameForId}>
                     <a
                         href={`#${shortUniqueNameForId}`}
-                        className="hover:text-amber-600"
+                        className="hover:text-blue-700"
                     >
                         {title}
                     </a>
                 </h1>
             ) : (
-                <h1 className="max-w-300 text-6xl">{title}</h1>
+                <h1 className="text-4xl font-bold">{title}</h1>
             )}
 
             {subtitle && <span className="text-sm font-light">{subtitle}</span>}
-            {children && (
-                <div className="max-w-280 pt-12 pb-18">{children}</div>
-            )}
+            {children && <div className="pt-6 pb-12">{children}</div>}
         </>
-    );
-}
-
-export function StyledLink({
-    to,
-    children,
-    onClick,
-}: {
-    to: "/" | "/writing" | "/cool-stuff" | "/food" | "/bracket";
-    children: ReactNode;
-    onClick?: () => void;
-}) {
-    return (
-        <div className="text-2xl">
-            <Link to={to} style={{ color: "white" }} onClick={onClick}>
-                {children}
-            </Link>
-        </div>
     );
 }
 
@@ -99,7 +78,7 @@ export function InlineTextFootnoteModal({
             <button
                 type="button"
                 onClick={() => setIsOpen(true)}
-                className="text-amber-300 underline hover:text-amber-600"
+                className="underline hover:text-blue-700"
             >
                 <sup>{children}</sup>
             </button>
@@ -108,7 +87,7 @@ export function InlineTextFootnoteModal({
                     <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-sm transition-opacity duration-300 ease-out">
                         <div
                             ref={modalRef}
-                            className="relative w-full max-w-md scale-100 rounded-2xl bg-amber-950 p-6 shadow-2xl transition-all duration-300 ease-out"
+                            className="relative w-full max-w-md scale-100 rounded-2xl bg-white p-6 shadow-2xl transition-all duration-300 ease-out"
                         >
                             {title && (
                                 <h2 className="mb-4 text-lg font-semibold">

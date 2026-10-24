@@ -18,7 +18,7 @@ function GoodFood() {
                     <a
                         href="https://www.instagram.com/Chickengs1"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         Chicken G's
                     </a>
@@ -27,7 +27,7 @@ function GoodFood() {
                     <a
                         href="https://www.google.com/search?rlz=1C1RUCY_enUS750BR751&ei=S6iFW8LkI8ykjwTL_ofADA&q=falafel+stop&oq=falafel+stop&gs_l=psy-ab.3..0i71k1l8.9487.9487.0.9760.0.0.0.0.0.0.0.0..0.0....0...1c.1.64.psy-ab..0.0.0....0.p_4h_VdACc0#lrd=0x808fb5d681ffd42d:0x86fc95f3cc7e8704,1,,,"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         Falafel STOP
                     </a>
@@ -36,7 +36,7 @@ function GoodFood() {
                     <a
                         href="https://taqueriaelgrullense.shop/"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         Taqueria El Grullense
                     </a>
@@ -45,7 +45,7 @@ function GoodFood() {
                     <a
                         href="https://www.dindingdumplinghouses.com/"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         Din Ding Union City
                     </a>
@@ -54,7 +54,7 @@ function GoodFood() {
                     <a
                         href="https://www.cheztj.com/"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         Chez TJ
                     </a>
@@ -64,7 +64,7 @@ function GoodFood() {
                     <a
                         href="https://www.mikonosgrills.com/"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         Mikonos Grill
                     </a>
@@ -73,7 +73,7 @@ function GoodFood() {
                     <a
                         href="https://www.hamdiseattle.com/"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         Hamdi
                     </a>
@@ -108,7 +108,7 @@ function NeedsImprovement() {
                     <a
                         href="https://www.selbysrestaurant.com/"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         Selby's
                     </a>
@@ -118,7 +118,7 @@ function NeedsImprovement() {
                     <a
                         href="https://808-zone.com/"
                         target="_blank"
-                        className="text-amber-300 hover:text-amber-600 underline"
+                        className="hover:text-blue-700 underline"
                     >
                         808 Zone
                     </a>
