@@ -2,34 +2,18 @@
     "editor.formatOnSave": true,
     "editor.rulers": [121],
     "editor.tabSize": 4,
-    "prettier.tabWidth": 4,
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
         "rewrap.autoWrap.enabled": true
     },
     "markdownlint.configFile": ".markdownlint.jsonc",
-    "[javascript]": {
+    "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][jsonl]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json][jsonc][jsonl]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "prettier.trailingComma": "none",
-        "editor.tabSize": 4
     },
     "evenBetterToml.taplo.configFile.path": ".taplo.toml",
     "[toml]": {
         "editor.defaultFormatter": "tamasfe.even-better-toml",
-        "editor.rulers": [80],
-        "editor.formatOnSave": true
+        "editor.rulers": [80]
     },
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
