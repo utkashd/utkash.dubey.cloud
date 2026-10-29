@@ -40,7 +40,6 @@
         "**/.hg": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "**/.venv/": true,
         "**/node_modules/": true,
         "**/.tanstack/": true,
         "**/dist/": true,
