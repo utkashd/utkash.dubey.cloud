@@ -2,7 +2,6 @@
     "editor.formatOnSave": true,
     "editor.rulers": [121],
     "editor.tabSize": 4,
-    "python.analysis.autoImportCompletions": true,
     "prettier.tabWidth": 4,
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
