@@ -16,8 +16,8 @@ export default [
     },
     {
         ignores: [
-            "eslint.config.js",
-            "prettier.config.js",
+            "config/eslint.config.js",
+            "config/prettier.config.js",
             "**/routeTree.gen.ts",
         ],
     },

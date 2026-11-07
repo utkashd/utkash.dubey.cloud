@@ -2,9 +2,8 @@
     "include": [
         "**/*.ts",
         "**/*.tsx",
-        "eslint.config.js",
-        "prettier.config.js",
-        "vite.config.js"
+        "config/eslint.config.js",
+        "config/prettier.config.js"
     ],
 
     "compilerOptions": {

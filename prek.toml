@@ -18,7 +18,7 @@ rev = "v0.48.0"
 
 [[repos.hooks]]
 id = "markdownlint"
-args = ["--config", ".markdownlint.jsonc"]
+args = ["--config", "config/.markdownlint.jsonc"]
 
 [[repos]]
 repo = "https://github.com/ComPWA/taplo-pre-commit"
@@ -26,7 +26,7 @@ rev = "v0.9.3"
 
 [[repos.hooks]]
 id = "taplo-format"
-args = ["--config", ".taplo.toml"]
+args = ["--config", "config/.taplo.toml"]
 
 [[repos]]
 repo = "local"
@@ -45,7 +45,7 @@ repo = "local"
 [[repos.hooks]]
 id = "prettier"
 name = "prettier"
-entry = "node_modules/.bin/prettier --write --ignore-unknown"
+entry = "node_modules/.bin/prettier --config config/prettier.config.js --ignore-path .gitignore --ignore-path config/.prettierignore --write --ignore-unknown"
 language = "system"
 types_or = ["css", "javascript", "json", "jsx", "scss", "ts", "tsx", "yaml"]
 exclude = "(^|/)src/routeTree\\.gen\\.ts$|^(dist/|\\.tanstack/|pnpm-lock\\.yaml$)"
@@ -57,7 +57,7 @@ repo = "local"
 [[repos.hooks]]
 id = "eslint"
 name = "eslint"
-entry = "node_modules/.bin/eslint --fix --no-warn-ignored"
+entry = "node_modules/.bin/eslint --config config/eslint.config.js --fix --no-warn-ignored"
 language = "system"
 types_or = ["javascript", "jsx", "ts", "tsx"]
 exclude = "(^|/)src/routeTree\\.gen\\.ts$|^(dist/|\\.tanstack/)"
