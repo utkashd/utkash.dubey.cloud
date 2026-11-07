@@ -242,6 +242,7 @@ export function CoolStuff() {
                     <li>Atlanta</li>
                     <li>Teen Titans</li>
                     <li>Cowboy Bebop</li>
+                    <li>Band of Brothers</li>
                     <li>True Detective Season 3</li>
                     <li>Babylon Berlin</li>
                     <li>Silo</li>
