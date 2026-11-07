@@ -2,15 +2,20 @@
     "editor.formatOnSave": true,
     "editor.rulers": [121],
     "editor.tabSize": 4,
+    "eslint.options": {
+        "overrideConfigFile": "config/eslint.config.js"
+    },
+    "prettier.configPath": "config/prettier.config.js",
+    "prettier.ignorePath": "config/.prettierignore",
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
         "rewrap.autoWrap.enabled": true
     },
-    "markdownlint.configFile": ".markdownlint.jsonc",
+    "markdownlint.configFile": "config/.markdownlint.jsonc",
     "[javascript][javascriptreact][typescript][typescriptreact][json][jsonc][jsonl]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "evenBetterToml.taplo.configFile.path": ".taplo.toml",
+    "evenBetterToml.taplo.configFile.path": "config/.taplo.toml",
     "[toml]": {
         "editor.defaultFormatter": "tamasfe.even-better-toml",
         "editor.rulers": [80]
